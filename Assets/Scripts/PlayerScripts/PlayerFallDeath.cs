@@ -14,19 +14,19 @@ public class PlayerFallDeath : MonoBehaviour
     {
         if (GetComponent<Rigidbody>().linearVelocity.y < 0)
         {
-            falltime+=Time.deltaTime;
+            falltime++;
         }
         if(GetComponent<Rigidbody>().linearVelocity.y>=0)
         {
             falltime=0;
         }
 
-        if (falltime>= 5)
+        if (falltime>= 80)
         {
             Die();
         }
     }
-        void Die()
+    void Die()
     {
         SceneManager.LoadScene("GameOver");
     }
