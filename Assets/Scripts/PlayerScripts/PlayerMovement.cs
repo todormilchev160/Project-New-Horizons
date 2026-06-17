@@ -7,99 +7,96 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Circle Movement")]
     [SerializeField] private Transform circleCenter;
-    [SerializeField] private float radius = 3f;
-    [SerializeField] private float currentSpeed = 120f;
-    [SerializeField] private float acceleration = 10f;
     [SerializeField] private float moveSpeed = 5f;
-    [Header("Dash")]
-    [SerializeField]private float dashSpeed=20;
-    [SerializeField] private float dashDistance = 5;
-    [SerializeField]private float doubleclicktime;
-    private float timesincelassleftclick;
-    private float timesincelastrightclick;
-    private float rightdirection=1;
-    private float leftdirection=-1;
+    [SerializeField] private float acceleration = 10f;
 
-    private float direction = 0f;
-    private float currentAngularSpeed = 0f;
+    [Header("Dash")]
+    [SerializeField] private float dashSpeed = 20f;
+    [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float doubleClickTime = 0.3f;
+
+    private float radius;
     private float angle;
+    private float direction = 0f;
+    private float currentSpeed = 0f;
+    private float normalMoveSpeed;
+
+    private float lastLeftClickTime = -999f;
+    private float lastRightClickTime = -999f;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        normalMoveSpeed = moveSpeed;
 
+        Vector3 offset = transform.position - circleCenter.position;
+        offset.y = 0f;
 
-    animator = GetComponent<Animator>();
-
-    Vector3 offset = transform.position - circleCenter.position;
-
-    offset.y = 0f; // ignore height
-
-    radius = offset.magnitude;
-
-    angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
+        radius = offset.magnitude;
+        angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
-    void Update()
+void Update()
 {
-    timesincelassleftclick++;
-    timesincelastrightclick++;
-   float targetSpeed = direction * moveSpeed;
+    if (direction == 0f)
+        return;
 
-currentSpeed = Mathf.Lerp(
-    currentSpeed,
-    targetSpeed,
-    acceleration * Time.deltaTime
-);
+    if (radius <= 0.01f)
+        return;
 
-       float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
-       angle += angularVelocity * Time.deltaTime;
+    float targetSpeed = direction * moveSpeed;
 
-        float radians = angle * Mathf.Deg2Rad;
+    currentSpeed = Mathf.Lerp(
+        currentSpeed,
+        targetSpeed,
+        acceleration * Time.deltaTime
+    );
 
-Vector3 newPosition = circleCenter.position + new Vector3(
-    Mathf.Cos(radians) * radius,
-    0f,
-    Mathf.Sin(radians) * radius
-);
+    float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
+    angle += angularVelocity * Time.deltaTime;
 
-newPosition.y = transform.position.y;
+    float radians = angle * Mathf.Deg2Rad;
 
-transform.position = newPosition;
+    Vector3 newPosition = circleCenter.position + new Vector3(
+        Mathf.Cos(radians) * radius,
+        0f,
+        Mathf.Sin(radians) * radius
+    );
 
     newPosition.y = transform.position.y;
-
-     transform.position = newPosition;
-
-      transform.position = newPosition;
-    }
+    transform.position = newPosition;
+}
 
     public void MoveRight()
     {
         animator.SetBool("IsWalking", true);
-        if(timesincelastrightclick<doubleclicktime)
+
+        if (Time.time - lastRightClickTime < doubleClickTime)
         {
-            StartCoroutine(Dash(-1));
+            StartCoroutine(Dash(-1f));
         }
         else
         {
             direction = -1f;
         }
-        timesincelastrightclick=0;
+
+        lastRightClickTime = Time.time;
     }
 
     public void MoveLeft()
     {
         animator.SetBool("IsWalking", true);
-        if(timesincelassleftclick<doubleclicktime)
+
+        if (Time.time - lastLeftClickTime < doubleClickTime)
         {
-            StartCoroutine(Dash(1));
+            StartCoroutine(Dash(1f));
         }
         else
         {
-           direction = 1f; 
+            direction = 1f;
         }
-        timesincelassleftclick=0;
+
+        lastLeftClickTime = Time.time;
     }
 
     public void StopMoving()
@@ -107,11 +104,14 @@ transform.position = newPosition;
         direction = 0f;
         animator.SetBool("IsWalking", false);
     }
-    public IEnumerator Dash(float directiondash)
+
+    private IEnumerator Dash(float dashDirection)
     {
-        direction=directiondash;
-        moveSpeed=dashSpeed;
-        yield return new WaitForSeconds(dashDistance);
-        moveSpeed=5f;
+        direction = dashDirection;
+        moveSpeed = dashSpeed;
+
+        yield return new WaitForSeconds(dashDuration);
+
+        moveSpeed = normalMoveSpeed;
     }
 }
