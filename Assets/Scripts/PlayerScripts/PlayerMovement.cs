@@ -1,101 +1,83 @@
-using Unity.VisualScripting;
 using UnityEngine;
-
 
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
-    [Header ("Movement")]
-    [SerializeField]private float speed=5f;
-    [SerializeField]private float acceleration=10f;
-    [Header ("Dash")]
-    public float dashSpeed = 15f;
-    [SerializeField] float dashDuration = 0.2f;
-    [SerializeField]private float doubleTapTime = 0.3f;
 
-    private float lastLeftTap;
-    private float lastRightTap;
+    [Header("Circle Movement")]
+    [SerializeField] private Transform circleCenter;
+    [SerializeField] private float radius = 3f;
+    [SerializeField] private float currentSpeed = 120f;
+    [SerializeField] private float acceleration = 10f;
+    [SerializeField] private float moveSpeed = 5f;
 
-    private bool isDashing=false;
-    private float dashTimer;
-    private float direction =0f;
-    private float currentSpeed=0f;
-    private Rigidbody rb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private float direction = 0f;
+    private float currentAngularSpeed = 0f;
+    private float angle;
+
     void Start()
     {
-        animator=GetComponent<Animator>();
-        rb=GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+
+
+    animator = GetComponent<Animator>();
+
+    Vector3 offset = transform.position - circleCenter.position;
+
+    offset.y = 0f; // ignore height
+
+    radius = offset.magnitude;
+
+    angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float targetSpeed = direction * speed;
+   float targetSpeed = direction * moveSpeed;
 
-        currentSpeed = Mathf.Lerp(
-            currentSpeed,
-            targetSpeed,
-            acceleration * Time.deltaTime
-        );
-       transform.Translate(Vector2.right * currentSpeed * Time.deltaTime);    
-    if (isDashing)
-    {
-        dashTimer -= Time.deltaTime;
+currentSpeed = Mathf.Lerp(
+    currentSpeed,
+    targetSpeed,
+    acceleration * Time.deltaTime
+);
 
-        if (dashTimer <= 0)
-        {
-            isDashing = false;
-            StopMoving();
-        }
+       float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
+       angle += angularVelocity * Time.deltaTime;
+
+        float radians = angle * Mathf.Deg2Rad;
+
+Vector3 newPosition = circleCenter.position + new Vector3(
+    Mathf.Cos(radians) * radius,
+    0f,
+    Mathf.Sin(radians) * radius
+);
+
+newPosition.y = transform.position.y;
+
+transform.position = newPosition;
+
+newPosition.y = transform.position.y;
+
+transform.position = newPosition;
+
+        transform.position = newPosition;
     }
-    }
+
     public void MoveRight()
     {
-      if (Time.time - lastRightTap < doubleTapTime)
-    {
-        Dash(1);
+        direction = -1f;
+        animator.SetBool("IsWalking", true);
     }
-    else
+
+    public void MoveLeft()
     {
         direction = 1f;
         animator.SetBool("IsWalking", true);
     }
-        animator.SetBool("IsWalking", true);
-    }
-    public void MoveLeft()
-    {
-    if (Time.time-lastLeftTap < doubleTapTime)
-    {
-        Dash(-1);
-    }
-    else
-    { 
-        direction = -1f;
-       
-    }
-        animator.SetBool("IsWalking", true);
-    }
+
     public void StopMoving()
     {
-        if (isDashing)
-        {
-            return; 
-        }
-        direction=0f;
+        direction = 0f;
         animator.SetBool("IsWalking", false);
     }
-    private void Dash(float dashDirection)
-{
-    Debug.Log("Dash");
-    isDashing = true;
-    dashTimer = dashDuration;
-
-    direction = dashDirection;
-
-    rb.linearVelocity = new Vector2(
-        dashDirection * dashSpeed,
-        rb.linearVelocity.y
-    );
-}
 }
