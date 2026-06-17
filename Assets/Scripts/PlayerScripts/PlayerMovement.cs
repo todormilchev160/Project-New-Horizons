@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,6 +11,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float currentSpeed = 120f;
     [SerializeField] private float acceleration = 10f;
     [SerializeField] private float moveSpeed = 5f;
+    [Header("Dash")]
+    [SerializeField]private float dashSpeed=20;
+    [SerializeField] private float dashDistance = 5;
+    [SerializeField]private float doubleclicktime;
+    private float timesincelassleftclick;
+    private float timesincelastrightclick;
+    private float rightdirection=1;
+    private float leftdirection=-1;
 
     private float direction = 0f;
     private float currentAngularSpeed = 0f;
@@ -32,7 +41,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update()
-    {
+{
+    timesincelassleftclick++;
+    timesincelastrightclick++;
    float targetSpeed = direction * moveSpeed;
 
 currentSpeed = Mathf.Lerp(
@@ -56,28 +67,51 @@ newPosition.y = transform.position.y;
 
 transform.position = newPosition;
 
-newPosition.y = transform.position.y;
+    newPosition.y = transform.position.y;
 
-transform.position = newPosition;
+     transform.position = newPosition;
 
-        transform.position = newPosition;
+      transform.position = newPosition;
     }
 
     public void MoveRight()
     {
-        direction = -1f;
         animator.SetBool("IsWalking", true);
+        if(timesincelastrightclick<doubleclicktime)
+        {
+            StartCoroutine(Dash(-1));
+        }
+        else
+        {
+            direction = -1f;
+        }
+        timesincelastrightclick=0;
     }
 
     public void MoveLeft()
     {
-        direction = 1f;
         animator.SetBool("IsWalking", true);
+        if(timesincelassleftclick<doubleclicktime)
+        {
+            StartCoroutine(Dash(1));
+        }
+        else
+        {
+           direction = 1f; 
+        }
+        timesincelassleftclick=0;
     }
 
     public void StopMoving()
     {
         direction = 0f;
         animator.SetBool("IsWalking", false);
+    }
+    public IEnumerator Dash(float directiondash)
+    {
+        direction=directiondash;
+        moveSpeed=dashSpeed;
+        yield return new WaitForSeconds(dashDistance);
+        moveSpeed=5f;
     }
 }
