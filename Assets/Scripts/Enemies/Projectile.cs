@@ -2,34 +2,73 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private Vector3 startPosition;
+       [SerializeField] private float damage = 5f;
+
+    private Transform circleCenter;
+    private float radius;
+    private float angle;
+    private float direction;
+    private float speed;
     private float maxDistance;
-    [SerializeField]private float damage=5;
-    private Rigidbody rb;
+    private float travelledDistance;
 
-    public void Initialize(Vector3 direction, float speed, float distance)
+    public void Initialize(
+        Transform center,
+        float startRadius,
+        float startAngle,
+        float moveDirection,
+        float projectileSpeed,
+        float projectileDistance
+    )
     {
-        rb = GetComponent<Rigidbody>();
+        circleCenter = center;
+        radius = startRadius;
+        angle = startAngle;
+        direction = moveDirection;
+        speed = projectileSpeed;
+        maxDistance = projectileDistance;
 
-        startPosition = transform.position;
-        maxDistance = distance;
-
-        rb.linearVelocity = direction.normalized * speed;
+        transform.position = GetPositionOnCircle();
     }
 
-    private void Update()
+    void Update()
     {
-        if (Vector3.Distance(startPosition, transform.position) >= maxDistance)
+        if (circleCenter == null)
+            return;
+
+        float distanceThisFrame = speed * Time.deltaTime;
+        travelledDistance += distanceThisFrame;
+
+        float angularVelocity = (distanceThisFrame / radius) * Mathf.Rad2Deg;
+        angle += angularVelocity * direction;
+
+        transform.position = GetPositionOnCircle();
+
+        if (travelledDistance >= maxDistance)
         {
             Destroy(gameObject);
         }
     }
 
-     void OnCollisionEnter(Collision collision)
+    private Vector3 GetPositionOnCircle()
     {
-      if(collision.gameObject.tag=="Player")
+        float radians = angle * Mathf.Deg2Rad;
+
+        Vector3 position = circleCenter.position + new Vector3(
+            Mathf.Cos(radians) * radius,
+            0f,
+            Mathf.Sin(radians) * radius
+        );
+
+        position.y = transform.position.y;
+        return position;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+            other.GetComponent<PlayerHealth>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
