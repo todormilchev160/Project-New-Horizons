@@ -5,23 +5,21 @@ public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
 
-    [Header("Circle Movement")]
-    [SerializeField] private Transform circleCenter;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float acceleration = 10f;
+   [Header("Circle Movement")]
+[SerializeField] private Transform circleCenter;
+[SerializeField] private float radius = 5f;
+[SerializeField] private float moveSpeed = 5f;
+[SerializeField] private float acceleration = 10f;
 
     [Header("Dash")]
     [SerializeField] private float dashSpeed = 20f;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float doubleClickTime = 0.3f;
     [SerializeField] private float dashCooldown = 0.5f;
-
-    private float radius;
     private float angle;
     private float direction = 0f;
     private float currentSpeed = 0f;
     private float normalMoveSpeed;
-
     private float lastLeftClickTime = -999f;
     private float lastRightClickTime = -999f;
     private float lastDashTime = -999f;
@@ -35,8 +33,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 offset = transform.position - circleCenter.position;
         offset.y = 0f;
-
-        radius = offset.magnitude;
         angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
@@ -71,35 +67,39 @@ public class PlayerMovement : MonoBehaviour
         transform.position = newPosition;
     }
 
-    public void MoveRight()
+ public void MoveRight()
+{
+    RecalculateCirclePosition();
+
+    animator.SetBool("IsWalking", true);
+
+    if (Time.time - lastRightClickTime < doubleClickTime)
     {
-        animator.SetBool("IsWalking", true);
-
-        if (Time.time - lastRightClickTime < doubleClickTime)
-        {
-            StartCoroutine(Dash(-1f));
-            lastRightClickTime = -999f;
-            return;
-        }
-
-        direction = -1f;
-        lastRightClickTime = Time.time;
+        StartCoroutine(Dash(-1f));
+        lastRightClickTime = -999f;
+        return;
     }
 
-    public void MoveLeft()
+    direction = -1f;
+    lastRightClickTime = Time.time;
+}
+
+public void MoveLeft()
+{
+    RecalculateCirclePosition();
+
+    animator.SetBool("IsWalking", true);
+
+    if (Time.time - lastLeftClickTime < doubleClickTime)
     {
-        animator.SetBool("IsWalking", true);
-
-        if (Time.time - lastLeftClickTime < doubleClickTime)
-        {
-            StartCoroutine(Dash(1f));
-            lastLeftClickTime = -999f;
-            return;
-        }
-
-        direction = 1f;
-        lastLeftClickTime = Time.time;
+        StartCoroutine(Dash(1f));
+        lastLeftClickTime = -999f;
+        return;
     }
+
+    direction = 1f;
+    lastLeftClickTime = Time.time;
+}
 
     public void StopMoving()
     {
@@ -134,4 +134,12 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsWalking", false);
     }
+    private void RecalculateCirclePosition()
+{
+    Vector3 offset = transform.position - circleCenter.position;
+    offset.y = 0f;
+
+    radius = offset.magnitude;
+    angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
+}
 }
