@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashSpeed = 20f;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float doubleClickTime = 0.3f;
+    [SerializeField] private float dashCooldown = 0.5f;
 
     private float radius;
     private float angle;
@@ -23,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
     private float lastLeftClickTime = -999f;
     private float lastRightClickTime = -999f;
+    private float lastDashTime = -999f;
+
+    private bool isDashing = false;
 
     void Start()
     {
@@ -36,36 +40,36 @@ public class PlayerMovement : MonoBehaviour
         angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
-void Update()
-{
-    if (direction == 0f)
-        return;
+    void Update()
+    {
+        if (direction == 0f)
+            return;
 
-    if (radius <= 0.01f)
-        return;
+        if (radius <= 0.01f)
+            return;
 
-    float targetSpeed = direction * moveSpeed;
+        float targetSpeed = direction * moveSpeed;
 
-    currentSpeed = Mathf.Lerp(
-        currentSpeed,
-        targetSpeed,
-        acceleration * Time.deltaTime
-    );
+        currentSpeed = Mathf.Lerp(
+            currentSpeed,
+            targetSpeed,
+            acceleration * Time.deltaTime
+        );
 
-    float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
-    angle += angularVelocity * Time.deltaTime;
+        float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
+        angle += angularVelocity * Time.deltaTime;
 
-    float radians = angle * Mathf.Deg2Rad;
+        float radians = angle * Mathf.Deg2Rad;
 
-    Vector3 newPosition = circleCenter.position + new Vector3(
-        Mathf.Cos(radians) * radius,
-        0f,
-        Mathf.Sin(radians) * radius
-    );
+        Vector3 newPosition = circleCenter.position + new Vector3(
+            Mathf.Cos(radians) * radius,
+            0f,
+            Mathf.Sin(radians) * radius
+        );
 
-    newPosition.y = transform.position.y;
-    transform.position = newPosition;
-}
+        newPosition.y = transform.position.y;
+        transform.position = newPosition;
+    }
 
     public void MoveRight()
     {
@@ -74,12 +78,11 @@ void Update()
         if (Time.time - lastRightClickTime < doubleClickTime)
         {
             StartCoroutine(Dash(-1f));
-        }
-        else
-        {
-            direction = -1f;
+            lastRightClickTime = -999f;
+            return;
         }
 
+        direction = -1f;
         lastRightClickTime = Time.time;
     }
 
@@ -90,28 +93,45 @@ void Update()
         if (Time.time - lastLeftClickTime < doubleClickTime)
         {
             StartCoroutine(Dash(1f));
-        }
-        else
-        {
-            direction = 1f;
+            lastLeftClickTime = -999f;
+            return;
         }
 
+        direction = 1f;
         lastLeftClickTime = Time.time;
     }
 
     public void StopMoving()
     {
+        if (isDashing)
+            return;
+
         direction = 0f;
         animator.SetBool("IsWalking", false);
     }
 
     private IEnumerator Dash(float dashDirection)
     {
+        if (isDashing)
+            yield break;
+
+        if (Time.time - lastDashTime < dashCooldown)
+            yield break;
+
+        isDashing = true;
+        lastDashTime = Time.time;
+
         direction = dashDirection;
         moveSpeed = dashSpeed;
+        currentSpeed = dashDirection * dashSpeed;
 
         yield return new WaitForSeconds(dashDuration);
 
         moveSpeed = normalMoveSpeed;
+        currentSpeed = 0f;
+        direction = 0f;
+        isDashing = false;
+
+        animator.SetBool("IsWalking", false);
     }
 }
