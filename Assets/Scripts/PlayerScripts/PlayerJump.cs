@@ -2,47 +2,45 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
-       private Rigidbody rb;
-       private Animator animator;
-       private bool isGrounded;
-       [SerializeField]private float jumpForce = 8f;
-       private float jumpTimeCounter;
-       private bool isJumping;
+    private Rigidbody rb;
+    private Animator animator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool isGrounded=true;
+
+    [SerializeField] private float jumpForce = 8f;
+
     void Start()
     {
-      rb=GetComponent<Rigidbody>();  
-      animator=GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
+
     void Update()
-{
-     animator.SetBool("IsGrounded", isGrounded);
-} 
-
-public void StartJump()
-{
-    if (isGrounded)
     {
-        rb.linearVelocity = new Vector2(
+        animator.SetBool("IsGrounded", isGrounded);
+    }
+
+    public void StartJump()
+    {
+        if (!isGrounded)
+        {
+            Debug.Log("Notgrounded");
+            return;
+        }
+           
+
+        rb.linearVelocity = new Vector3(
             rb.linearVelocity.x,
-            jumpForce
+            jumpForce,
+            rb.linearVelocity.z
         );
+
+        isGrounded = false;
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+ 
+            isGrounded = true;
     }
 }
-   void OnCollisionEnter(Collision col)
-   {
-        if(col.gameObject.tag == "Ground")
-		{
-			isGrounded=true;
-        }
-   }
-    void OnCollisionExit(Collision col)
-   {
-        if(col.gameObject.tag == "Ground")
-		{
-			isGrounded=false;
-        }
-   }
-}
-
