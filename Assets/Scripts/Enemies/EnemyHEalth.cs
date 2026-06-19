@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyHEalth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]private float enemyhealth=30;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
