@@ -3,19 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader Instance;
     private Animator animator;
     [SerializeField]private float transitiontime;
-    void Awake()
-    {
-        if(Instance!=null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

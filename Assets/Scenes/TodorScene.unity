@@ -499,6 +499,17 @@ MonoBehaviour:
   lookAheadDistance: 5
   lookAheadSmoothSpeed: 3
   movementThreshold: 0.1
+--- !u!114 &741961709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3891545491637116569, guid: 26f0e6356f1ea3d4884cb0ca9a885e46, type: 3}
+  m_PrefabInstance: {fileID: 5446854859579702961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb792f27b9ac744ea4ac15ea38ad0f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1017978138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 4198585552972984682, guid: b9102557218380b4d9aecde9d78b4943, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3891545491637116569, guid: 26f0e6356f1ea3d4884cb0ca9a885e46, type: 3}
+      objectReference: {fileID: 741961709}
     - target: {fileID: 4198585552972984682, guid: b9102557218380b4d9aecde9d78b4943, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
