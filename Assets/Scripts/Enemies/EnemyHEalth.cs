@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyHEalth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]private float enemyhealth=30;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,10 +12,18 @@ public class EnemyHEalth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(enemyhealth);
     }
     public void TakeDamage(float damage)
     {
         enemyhealth-=damage;
+        if(enemyhealth<=0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }

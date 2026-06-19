@@ -17,13 +17,14 @@ GameObject:
   - component: {fileID: 6129217278885931619}
   - component: {fileID: 2957515048662918211}
   - component: {fileID: 5339378206840626850}
+  - component: {fileID: 108885459423065294}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7525206115456511833
 Transform:
   m_ObjectHideFlags: 0
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084269948829997028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41266d3c294a62a4bb1e9f30a43731f0, type: 3}
   m_Name: 
@@ -189,7 +190,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084269948829997028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 187aed357d7f8ad4c8b3da8dde506e98, type: 3}
   m_Name: 
@@ -197,8 +198,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 7962102983132468889}
   player: {fileID: 0}
+  circleCenter: {fileID: 0}
   projectileSpeed: 10
-  projectileDistance: 5
+  projectileDistance: 10
+  fireRate: 2
 --- !u!114 &5339378206840626850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyhealth: 30
+--- !u!114 &108885459423065294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084269948829997028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5dbf6c354af5045938262167d958f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 20
 --- !u!1 &7812391255226683206
 GameObject:
   m_ObjectHideFlags: 0
