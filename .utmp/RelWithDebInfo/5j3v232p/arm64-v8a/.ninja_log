@@ -1,0 +1,12 @@
+# ninja log v5
+86	559	8035002998334284	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	77a8765b86a912
+562	809	8035003000779228	C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j3v232p/obj/arm64-v8a/libswappywrapper.so	df40ddf3d40cda18
+54	1681	8035003009494396	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	95314e70dd0bb259
+43	1694	8035003009634640	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	69f48bea10045c86
+23	1717	8035003009861281	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3f603133594d5149
+74	1729	8035003009991923	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ba61e82b7041fee5
+14	1779	8035003010453704	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	711749a945c32270
+64	2003	8035003012704896	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	456a7bc7f5876c8f
+32	2025	8035003012956174	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2a926fafab3c4ae8
+2	2148	8035003014140860	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	212fad77f4b646e1
+2148	2269	8035003015403855	C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j3v232p/obj/arm64-v8a/libgame.so	53f09debccccf115
