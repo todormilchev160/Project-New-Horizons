@@ -1,11 +1,12 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private Image[] scoreBars;
+    [SerializeField] private int pointsPerBar = 10;
 
     private int score = 0;
 
@@ -13,16 +14,27 @@ public class ScoreManager : MonoBehaviour
     {
         instance = this;
     }
+
     void Start()
     {
-        scoreText.text="Score: "+score;
+        UpdateBars();
     }
 
     public void AddScore(int amount)
     {
         score += amount;
+        UpdateBars();
+    }
 
-        if (scoreText != null)
-            scoreText.text = "Score: " + score;
+    private void UpdateBars()
+    {
+        for (int i = 0; i < scoreBars.Length; i++)
+        {
+            int scoreForThisBar = score - (i * pointsPerBar);
+
+            float fill = Mathf.Clamp01((float)scoreForThisBar / pointsPerBar);
+
+            scoreBars[i].fillAmount = fill;
+        }
     }
 }
