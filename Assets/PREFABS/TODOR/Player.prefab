@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 6113679469187526569}
   - component: {fileID: 4466393233461483330}
   - component: {fileID: 3339601663846830435}
-  - component: {fileID: 134820658885881361}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -227,27 +226,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &134820658885881361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664331487349599311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50fc70acc9e01f746ad99c3791240c04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 0.5
-  coneAngle: 60
-  attackDuration: 1
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  attackvisual: {fileID: 2505437062752942921}
-  attackvisualleft: {fileID: 1677472395303089637}
 --- !u!1 &1677472395303089637
 GameObject:
   m_ObjectHideFlags: 0
