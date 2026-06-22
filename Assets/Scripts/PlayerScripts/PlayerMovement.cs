@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         if (direction == 0f)
             return;
 
