@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        LockToCircle();
         if (direction == 0f)
             return;
 
@@ -76,6 +76,24 @@ public class PlayerMovement : MonoBehaviour
 
         RotateTowardCenter();
     }
+    private void LockToCircle()
+{
+    if (radius <= 0.01f)
+        return;
+
+    float radians = angle * Mathf.Deg2Rad;
+
+    Vector3 lockedPosition = circleCenter.position + new Vector3(
+        Mathf.Cos(radians) * radius,
+        0f,
+        Mathf.Sin(radians) * radius
+    );
+
+    lockedPosition.y = transform.position.y;
+    transform.position = lockedPosition;
+
+    RotateTowardCenter();
+}
 
     public void MoveRight()
     {
