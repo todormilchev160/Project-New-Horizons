@@ -1,11 +1,9 @@
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
-    public static int barToFill;
 
     [SerializeField] private Image[] scoreBars;
     [SerializeField] private int pointsPerBar = 10;
@@ -30,11 +28,13 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateBars()
     {
-  
-            int scoreForThisBar = score - (barToFill * pointsPerBar);
+        for (int i = 0; i < scoreBars.Length; i++)
+        {
+            int scoreForThisBar = score - (i * pointsPerBar);
 
             float fill = Mathf.Clamp01((float)scoreForThisBar / pointsPerBar);
 
-            scoreBars[barToFill].fillAmount = fill;
+            scoreBars[i].fillAmount = fill;
+        }
     }
 }

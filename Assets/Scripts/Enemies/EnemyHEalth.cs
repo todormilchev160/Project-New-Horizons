@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -18,21 +17,13 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         enemyhealth-=damage;
-        StartCoroutine(DamageFeedback());
         if(enemyhealth<=0)
         {
             Die();
         }
     }
-    public void Die()
+    void Die()
     {
         Destroy(gameObject);
-    }
-    public IEnumerator DamageFeedback()
-    {
-        GetComponent<Renderer>().material.color=Color.red;
-        yield return new WaitForSeconds(1);
-        GetComponent<Renderer>().material.color=Color.gray;
-
     }
 }
