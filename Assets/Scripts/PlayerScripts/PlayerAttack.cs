@@ -28,61 +28,54 @@ public class PlayerAttack : MonoBehaviour
     }
 
     public IEnumerator Attack()
-    {
-        Vector3 attackDirection =
-    facingRight ? transform.forward : -transform.forward;
-        if(facingRight)
-        {
-            attackvisual.SetActive(true);
-        
-        }
-        else
-        {
-            attackvisualleft.SetActive(true);
-        }
-        DrawDebugCone();
-        attacking = true;
-        Collider[] hits = Physics.OverlapSphere(
-            transform.position,
-            range,
-            enemyLayer
-        );
-
-        foreach (Collider hit in hits)
-        {
-            Vector3 directionToTarget = hit.transform.position - transform.position;
-            directionToTarget.y = 0f;
-
-            float angle = Vector3.Angle(attackDirection, directionToTarget);
-
-            if (angle <= coneAngle / 2f)
-            {
-                EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
-
-                if (enemyHealth != null)
-                {
-                    enemyHealth.TakeDamage(damage);
-                }
-            }
-        }
-
-        yield return new WaitForSeconds(attackDuration);
-          if(facingRight)
-        {
-            attackvisual.SetActive(false);
-        
-        }
-        else
-        {
-            attackvisualleft.SetActive(false);
-        }
-
-        attacking = false;
-    }
-    private void DrawDebugCone()
 {
+    if (attacking)
+        yield break;
+
+    attacking = true;
+
+    bool attackWasRight = facingRight;
+
+    attackvisual.SetActive(false);
+    attackvisualleft.SetActive(false);
+
+    GameObject activeVisual = attackWasRight ? attackvisual : attackvisualleft;
+    activeVisual.SetActive(true);
+
     Vector3 attackDirection =
-    facingRight ? transform.forward : -transform.forward;
+        attackWasRight ? transform.forward : -transform.forward;
+
+    DrawDebugCone(attackDirection);
+
+    Collider[] hits = Physics.OverlapSphere(
+        transform.position,
+        range,
+        enemyLayer
+    );
+
+    foreach (Collider hit in hits)
+    {
+        Vector3 directionToTarget = hit.transform.position - transform.position;
+        directionToTarget.y = 0f;
+
+        float angle = Vector3.Angle(attackDirection, directionToTarget);
+
+        if (angle <= coneAngle / 2f)
+        {
+            EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
+
+            if (enemyHealth != null)
+                enemyHealth.TakeDamage(damage);
+        }
+    }
+
+    yield return new WaitForSeconds(attackDuration);
+
+    activeVisual.SetActive(false);
+    attacking = false;
+}
+private void DrawDebugCone(Vector3 attackDirection)
+{
     Vector3 origin = transform.position;
 
     int segments = 20;
@@ -100,9 +93,7 @@ public class PlayerAttack : MonoBehaviour
         Vector3 point = origin + direction * range;
 
         if (i > 0)
-        {
             Debug.DrawLine(previousPoint, point, Color.red, attackDuration);
-        }
 
         previousPoint = point;
     }
