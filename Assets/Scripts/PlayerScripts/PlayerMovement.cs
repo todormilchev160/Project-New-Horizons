@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
 
         moveSpeed = normalMoveSpeed;
         currentSpeed = 0f;
-        direction = 0f;
+        direction = dashDirection;
         isDashing = false;
 
         animator.SetBool("IsWalking", false);

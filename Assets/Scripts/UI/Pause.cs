@@ -21,6 +21,7 @@ public class Pause : MonoBehaviour
     }
     public void UnPause()
     {
+        
         Time.timeScale=1f;
         pauseMenuUI.SetActive(false);
     }

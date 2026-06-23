@@ -1,0 +1,1 @@
+C:\Users\todor\Desktop\Unity Projects\Project New Horizons\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\153f3n55\obj\arm64-v8a
