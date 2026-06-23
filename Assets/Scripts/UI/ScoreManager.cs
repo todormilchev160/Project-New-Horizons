@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int pointsPerBar = 10;
 
     private int score = 0;
+    public static int barToFill;
 
     void Awake()
     {
@@ -28,13 +29,10 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateBars()
     {
-        for (int i = 0; i < scoreBars.Length; i++)
-        {
-            int scoreForThisBar = score - (i * pointsPerBar);
+            int scoreForThisBar = score - (barToFill * pointsPerBar);
 
             float fill = Mathf.Clamp01((float)scoreForThisBar / pointsPerBar);
 
-            scoreBars[i].fillAmount = fill;
-        }
+            scoreBars[barToFill].fillAmount = fill;
     }
 }

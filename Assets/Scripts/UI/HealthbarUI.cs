@@ -19,5 +19,6 @@ public class HealthBarUI : MonoBehaviour
     public void UpdateHealthBar()
     {
       fillImage.fillAmount = playerHealth.health / maxHealth;
+      
     }
 }
