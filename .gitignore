@@ -7,6 +7,7 @@
 [Ll]ogs/
 UserSettings/
 
+
 # Visual Studio / Rider
 .vs/
 .idea/
@@ -22,3 +23,4 @@ UserSettings/
 .DS_Store
 Thumbs.db
 Desktop.ini
+ProjectSettings/
