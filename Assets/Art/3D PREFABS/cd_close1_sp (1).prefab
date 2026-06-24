@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5870882418810855241}
   - component: {fileID: 5986931404469803556}
   - component: {fileID: 8640821232994431042}
+  - component: {fileID: 562334957456749489}
   m_Layer: 0
   m_Name: cd_close1_sp (1)
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6087902313916085209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.545063, y: 0.000023841729, z: 14.475105}
   m_LocalScale: {x: 0.003938377, y: 0.003938377, z: 0.003938377}
   m_ConstrainProportionsScale: 0
@@ -86,3 +87,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &562334957456749489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6087902313916085209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 100.00012, y: 7.085899, z: 100.00006}
+  m_Center: {x: -50.000076, y: 3.5429494, z: -50.00003}
