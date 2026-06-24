@@ -13,11 +13,12 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent agent;
     private Transform currentTarget;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        agent=GetComponent<NavMeshAgent>();
-        currentTarget=patrolPointB;
-    }
+void Start()
+{
+    agent = GetComponent<NavMeshAgent>();
+    currentTarget = patrolPointB;
+    agent.SetDestination(currentTarget.position);
+}
 
     // Update is called once per frame
     void Update()
@@ -55,4 +56,13 @@ public class Enemy : MonoBehaviour
 
         waiting = false;
     }
+    private void OnDisable()
+{
+    StopAllCoroutines();
+    waiting = false;
+
+    if (agent != null)
+        agent.isStopped = false;
+          agent.ResetPath();
+}
 }

@@ -8,8 +8,11 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private Image[] scoreBars;
     [SerializeField] private int pointsPerBar = 10;
 
-    private int score = 0;
-    public static int barToFill;
+  
+    private int drumscore=0;
+    private int guitarscore=0;
+    private int productionscore=0;
+    private int keyboardscore;
 
     void Awake()
     {
@@ -18,21 +21,25 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        UpdateBars();
+  
     }
 
-    public void AddScore(int amount)
+    public void AddDrumScore(int amount)
     {
-        score += amount;
-        UpdateBars();
+        drumscore += amount;
+       
     }
-
-    private void UpdateBars()
+    public void AddGuitarScore(int amount)
     {
-            int scoreForThisBar = score - (barToFill * pointsPerBar);
-
-            float fill = Mathf.Clamp01((float)scoreForThisBar / pointsPerBar);
-
-            scoreBars[barToFill].fillAmount = fill;
+        guitarscore+=amount;
     }
+    public void AddKeyboardScore(int amount)
+    {
+        keyboardscore += amount;
+    }
+    public void AddProductionScore(int amount)
+    {
+        productionscore+=amount;
+    }
+
 }
