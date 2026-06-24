@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
+    private PlayerAttack playerAttack;
 
     [Header("Circle Movement")]
     [SerializeField] private Transform circleCenter;
@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash")]
     [SerializeField] private float dashSpeed = 20f;
     [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashMomentumTime = 0.12f;
     [SerializeField] private float doubleClickTime = 0.3f;
     [SerializeField] private float dashCooldown = 0.5f;
 
@@ -31,12 +32,15 @@ public class PlayerMovement : MonoBehaviour
     private float lastDashTime = -999f;
 
     private bool isDashing = false;
-    private PlayerAttack playerAttack;
+    private bool isHoldingMove = false;
+
+    private Coroutine dashCoroutine;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        playerAttack=GetComponent<PlayerAttack>();
+        playerAttack = GetComponent<PlayerAttack>();
+
         normalMoveSpeed = moveSpeed;
 
         RecalculateCirclePosition();
@@ -46,10 +50,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         LockToCircle();
-        if (direction == 0f)
-            return;
 
-        if (radius <= 0.01f)
+        if (direction == 0f || radius <= 0.01f)
             return;
 
         float targetSpeed = direction * moveSpeed;
@@ -76,40 +78,24 @@ public class PlayerMovement : MonoBehaviour
 
         RotateTowardCenter();
     }
-    private void LockToCircle()
-{
-    if (radius <= 0.01f)
-        return;
-
-    float radians = angle * Mathf.Deg2Rad;
-
-    Vector3 lockedPosition = circleCenter.position + new Vector3(
-        Mathf.Cos(radians) * radius,
-        0f,
-        Mathf.Sin(radians) * radius
-    );
-
-    lockedPosition.y = transform.position.y;
-    transform.position = lockedPosition;
-
-    RotateTowardCenter();
-}
 
     public void MoveRight()
     {
         RecalculateCirclePosition();
 
+        isHoldingMove = true;
         animator.SetBool("IsWalking", true);
 
         if (Time.time - lastRightClickTime < doubleClickTime)
         {
-            StartCoroutine(Dash(-1f));
+            StartDash(-1f);
             lastRightClickTime = -999f;
             return;
         }
 
         direction = -1f;
         lastRightClickTime = Time.time;
+
         playerAttack.FaceRight();
     }
 
@@ -117,37 +103,49 @@ public class PlayerMovement : MonoBehaviour
     {
         RecalculateCirclePosition();
 
+        isHoldingMove = true;
         animator.SetBool("IsWalking", true);
 
         if (Time.time - lastLeftClickTime < doubleClickTime)
         {
-            StartCoroutine(Dash(1f));
+            StartDash(1f);
             lastLeftClickTime = -999f;
             return;
         }
 
         direction = 1f;
         lastLeftClickTime = Time.time;
+
         playerAttack.FaceLeft();
     }
 
     public void StopMoving()
     {
+        isHoldingMove = false;
+
         if (isDashing)
             return;
 
         direction = 0f;
+        currentSpeed = 0f;
+        moveSpeed = normalMoveSpeed;
+
         animator.SetBool("IsWalking", false);
+    }
+
+    private void StartDash(float dashDirection)
+    {
+        if (Time.time - lastDashTime < dashCooldown)
+            return;
+
+        if (dashCoroutine != null)
+            StopCoroutine(dashCoroutine);
+
+        dashCoroutine = StartCoroutine(Dash(dashDirection));
     }
 
     private IEnumerator Dash(float dashDirection)
     {
-        if (isDashing)
-            yield break;
-
-        if (Time.time - lastDashTime < dashCooldown)
-            yield break;
-
         isDashing = true;
         lastDashTime = Time.time;
 
@@ -157,12 +155,59 @@ public class PlayerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashDuration);
 
+        float timer = 0f;
+
+        while (timer < dashMomentumTime)
+        {
+            timer += Time.deltaTime;
+
+            moveSpeed = Mathf.Lerp(
+                dashSpeed,
+                normalMoveSpeed,
+                timer / dashMomentumTime
+            );
+
+            currentSpeed = dashDirection * moveSpeed;
+            direction = dashDirection;
+
+            yield return null;
+        }
+
         moveSpeed = normalMoveSpeed;
         currentSpeed = 0f;
-        direction = dashDirection;
         isDashing = false;
 
-        animator.SetBool("IsWalking", false);
+        if (isHoldingMove)
+        {
+            direction = dashDirection;
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            direction = 0f;
+            animator.SetBool("IsWalking", false);
+        }
+
+        dashCoroutine = null;
+    }
+
+    private void LockToCircle()
+    {
+        if (radius <= 0.01f)
+            return;
+
+        float radians = angle * Mathf.Deg2Rad;
+
+        Vector3 lockedPosition = circleCenter.position + new Vector3(
+            Mathf.Cos(radians) * radius,
+            0f,
+            Mathf.Sin(radians) * radius
+        );
+
+        lockedPosition.y = transform.position.y;
+        transform.position = lockedPosition;
+
+        RotateTowardCenter();
     }
 
     private void RecalculateCirclePosition()

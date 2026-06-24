@@ -18,13 +18,20 @@ public class EnemyAggro : MonoBehaviour
         chaseScript.enabled = false;
     }
 
-    private void Update()
-    {
-        if (player == null) return;
+private bool isAggro;
 
-        float distance = Vector3.Distance(transform.position, player.position);
+private void Update()
+{
+    if (player == null) return;
 
-        patrolScript.enabled = distance > detectionRange;
-        chaseScript.enabled = distance <= detectionRange;
-    }
+    float distance = Vector3.Distance(transform.position, player.position);
+    bool shouldAggro = distance <= detectionRange;
+
+    if (shouldAggro == isAggro) return;
+
+    isAggro = shouldAggro;
+
+    patrolScript.enabled = !isAggro;
+    chaseScript.enabled = isAggro;
+}
 }
