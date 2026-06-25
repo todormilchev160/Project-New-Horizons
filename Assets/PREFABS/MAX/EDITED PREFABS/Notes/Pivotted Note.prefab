@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7025915824974752279}
+  - component: {fileID: 7556860844045740749}
   m_Layer: 0
   m_Name: Pivotted Note
   m_TagString: Untagged
@@ -25,13 +26,26 @@ Transform:
   m_GameObject: {fileID: 1724575498692543086}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5609855, y: 0.4304595, z: -0.43045944, w: 0.56098545}
-  m_LocalPosition: {x: -4.6057, y: 1.915, z: 0.8186}
-  m_LocalScale: {x: 0.00016746158, y: 0.00016746158, z: 0.00016746158}
+  m_LocalPosition: {x: -1.3366091, y: -0.3588264, z: -1.7534536}
+  m_LocalScale: {x: 0.00016746156, y: 0.00016746156, z: 0.00016746156}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7580762487928435378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7556860844045740749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724575498692543086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceef25f14a13d024a9f387073f5eab68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 1
 --- !u!1 &2956098210278794965
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +58,7 @@ GameObject:
   - component: {fileID: 7770824863834121451}
   - component: {fileID: 1143630521176805261}
   - component: {fileID: 1020601269863593504}
+  - component: {fileID: 1670517416017293566}
   m_Layer: 0
   m_Name: note1_sp (5)
   m_TagString: Untagged
@@ -134,9 +149,22 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 270.01544
   m_Center: {x: 5.061021, y: 0.010497432, z: -4.1706696}
+--- !u!114 &1670517416017293566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956098210278794965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceef25f14a13d024a9f387073f5eab68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 1
