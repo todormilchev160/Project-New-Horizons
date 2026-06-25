@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,11 +25,17 @@ public class PlayerHealth : MonoBehaviour
     
     public void TakeDamage(float damage)
     {
-        Debug.Log("Damaged");
+        StartCoroutine(DamageFeedback());
         health-=damage;
     }
     void Die()
     {
         SceneManager.LoadScene("GameOver");
+    }
+    IEnumerator DamageFeedback()
+    {
+        GetComponent<Renderer>().material.color=Color.white;
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<Renderer>().material.color=Color.gray;
     }
 }
