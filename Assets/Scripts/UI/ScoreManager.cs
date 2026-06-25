@@ -53,7 +53,6 @@ public class ScoreManager : MonoBehaviour
     }
     public void UpdateDrumBar()
     {
-        Debug.Log("update");
         drumBar.fillAmount=(float)drumscore/maxDrumscore;
     }
     public void UpdateGuitarBar()
@@ -67,5 +66,12 @@ public class ScoreManager : MonoBehaviour
     public void UpdateProductionBar()
     {
         productionBar.fillAmount=(float)productionscore/maxProductionscore;
+    }
+    public void LoseScore(float amount)
+    {
+        drumscore-=amount;
+        guitarscore-=amount;
+        keyboardscore-=amount;
+        productionscore-=amount;
     }
 }
