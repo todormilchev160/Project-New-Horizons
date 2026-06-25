@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public float health=100;
-   
+    [SerializeField]private string deathScene;
+    [SerializeField]private float scoreLostOnDeath;
      private float falltime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,7 +31,8 @@ public class PlayerHealth : MonoBehaviour
     }
     void Die()
     {
-        SceneManager.LoadScene("GameOver");
+       ScoreManager.instance.LoseScore(scoreLostOnDeath);
+        SceneManager.LoadScene(deathScene);
     }
     IEnumerator DamageFeedback()
     {

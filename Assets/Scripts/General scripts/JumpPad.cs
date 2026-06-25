@@ -1,20 +1,17 @@
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]private int launchforce=3;
     void OnCollisionEnter(Collision collision)
     {
-        collision.gameObject.GetComponent<PlayerJump>().JumpPadJump();
+      Rigidbody rb =collision.gameObject.GetComponent<Rigidbody>();
+            rb.linearVelocity = new Vector3(
+            rb.linearVelocity.x,
+            launchforce,
+            rb.linearVelocity.z
+        );
+
     }
 }

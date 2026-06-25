@@ -79,45 +79,48 @@ public class PlayerMovement : MonoBehaviour
         RotateTowardCenter();
     }
 
-    public void MoveRight()
+public void MoveRight()
+{
+    RecalculateCirclePosition();
+
+    isHoldingMove = true;
+    animator.SetBool("IsWalking", true);
+
+    visualDirectionOffset = 0f;
+
+    if (Time.time - lastRightClickTime < doubleClickTime)
     {
-        RecalculateCirclePosition();
-
-        isHoldingMove = true;
-        animator.SetBool("IsWalking", true);
-
-        if (Time.time - lastRightClickTime < doubleClickTime)
-        {
-            StartDash(-1f);
-            lastRightClickTime = -999f;
-            return;
-        }
-
-        direction = -1f;
-        lastRightClickTime = Time.time;
-
-        playerAttack.FaceRight();
+        StartDash(-1f);
+        lastRightClickTime = -999f;
+        return;
     }
 
-    public void MoveLeft()
+    direction = -1f;
+    lastRightClickTime = Time.time;
+
+
+}
+
+public void MoveLeft()
+{
+    RecalculateCirclePosition();
+
+    isHoldingMove = true;
+    animator.SetBool("IsWalking", true);
+
+    visualDirectionOffset = 180f;
+
+    if (Time.time - lastLeftClickTime < doubleClickTime)
     {
-        RecalculateCirclePosition();
-
-        isHoldingMove = true;
-        animator.SetBool("IsWalking", true);
-
-        if (Time.time - lastLeftClickTime < doubleClickTime)
-        {
-            StartDash(1f);
-            lastLeftClickTime = -999f;
-            return;
-        }
-
-        direction = 1f;
-        lastLeftClickTime = Time.time;
-
-        playerAttack.FaceLeft();
+        StartDash(1f);
+        lastLeftClickTime = -999f;
+        return;
     }
+
+    direction = 1f;
+    lastLeftClickTime = Time.time;
+
+}
 
     public void StopMoving()
     {
@@ -219,16 +222,18 @@ public class PlayerMovement : MonoBehaviour
         angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
-    private void RotateTowardCenter()
-    {
-        Vector3 directionToCenter = circleCenter.position - transform.position;
-        directionToCenter.y = 0f;
+private float visualDirectionOffset = 0f;
 
-        if (directionToCenter == Vector3.zero)
-            return;
+private void RotateTowardCenter()
+{
+    Vector3 directionToCenter = circleCenter.position - transform.position;
+    directionToCenter.y = 0f;
 
-        transform.rotation =
-            Quaternion.LookRotation(directionToCenter) *
-            Quaternion.Euler(0f, rotationOffsetY, 0f);
-    }
+    if (directionToCenter == Vector3.zero)
+        return;
+
+    transform.rotation =
+        Quaternion.LookRotation(directionToCenter) *
+        Quaternion.Euler(0f, rotationOffsetY + visualDirectionOffset, 0f);
+}
 }

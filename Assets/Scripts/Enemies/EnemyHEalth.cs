@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]private float enemyhealth=30;
+    [SerializeField]private GameObject notePrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
     }
     public void Die()
     {
+        Instantiate(notePrefab,transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

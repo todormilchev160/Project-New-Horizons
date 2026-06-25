@@ -6,6 +6,7 @@ public class PlayerFallDeath : MonoBehaviour
     private Transform player;
     private Animator animator;
     [SerializeField]private string deathScene;
+    [SerializeField]private float scoreLostOnDeath=1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +24,7 @@ public class PlayerFallDeath : MonoBehaviour
     }
     void Die()
     { 
+        ScoreManager.instance.LoseScore(scoreLostOnDeath);
         animator.SetTrigger("Endscene");
         SceneManager.LoadScene(deathScene);
     }

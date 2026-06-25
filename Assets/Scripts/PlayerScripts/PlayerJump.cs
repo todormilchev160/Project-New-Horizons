@@ -9,7 +9,6 @@ public class PlayerJump : MonoBehaviour
 
     [SerializeField] private float jumpForce = 8f;
     [SerializeField] private int maxJumps = 2;
-    [SerializeField]private float jumpPadJumpforce;
 
     private int jumpsRemaining;
 
@@ -65,14 +64,5 @@ public class PlayerJump : MonoBehaviour
             groundCheck.position,
             groundCheckRadius
         );
-    }
-    public void JumpPadJump()
-    {
-            rb.linearVelocity = new Vector3(
-            rb.linearVelocity.x,
-            jumpPadJumpforce,
-            rb.linearVelocity.z
-        );
-        isGrounded = false;
     }
 }

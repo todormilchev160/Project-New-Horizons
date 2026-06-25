@@ -107,12 +107,5 @@ private void DrawDebugCone(Vector3 attackDirection)
     Debug.DrawLine(origin, origin + leftEdge * range, Color.red, attackDuration);
     Debug.DrawLine(origin, origin + rightEdge * range, Color.red, attackDuration);
 }
-   public void FaceRight()
-    {
-        facingRight=true;
-    }
-    public void FaceLeft()
-    {
-        facingRight=false;
-    }
+
 }
