@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180613818465973843}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.125, y: 1.138, z: 2.126}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyhealth: 30
+  notePrefab: {fileID: 4546357054217345267, guid: aaca1877ba7ab084bb650b4b6ca67e40, type: 3}
 --- !u!1 &901481548833690955
 GameObject:
   m_ObjectHideFlags: 0
