@@ -51,8 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        LockToCircle();
-
         if (direction == 0f || radius <= 0.01f)
             return;
 
@@ -77,7 +75,6 @@ public class PlayerMovement : MonoBehaviour
 
         newPosition.y = transform.position.y;
         rb.MovePosition(newPosition);
-
         RotateTowardCenter();
     }
 
@@ -99,8 +96,6 @@ public void MoveRight()
 
     direction = -1f;
     lastRightClickTime = Time.time;
-
-
 }
 
 public void MoveLeft()
@@ -196,24 +191,7 @@ public void MoveLeft()
         dashCoroutine = null;
     }
 
-    private void LockToCircle()
-    {
-        if (radius <= 0.01f)
-            return;
 
-        float radians = angle * Mathf.Deg2Rad;
-
-        Vector3 lockedPosition = circleCenter.position + new Vector3(
-            Mathf.Cos(radians) * radius,
-            0f,
-            Mathf.Sin(radians) * radius
-        );
-
-        lockedPosition.y = transform.position.y;
-        rb.MovePosition(lockedPosition);
-
-        RotateTowardCenter();
-    }
 
     private void RecalculateCirclePosition()
     {
