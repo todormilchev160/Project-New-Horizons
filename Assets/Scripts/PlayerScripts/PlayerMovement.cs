@@ -5,12 +5,13 @@ public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
     private PlayerAttack playerAttack;
+    private Rigidbody rb;
 
     [Header("Circle Movement")]
     [SerializeField] private Transform circleCenter;
     [SerializeField] private float radius = 5f;
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float acceleration = 10f;
+    [SerializeField] private float acceleration = 6f;
 
     [Header("Rotation")]
     [SerializeField] private float rotationOffsetY = 0f;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private float direction = 0f;
     private float currentSpeed = 0f;
     private float normalMoveSpeed;
+    private float visualDirectionOffset = 0f;
 
     private float lastLeftClickTime = -999f;
     private float lastRightClickTime = -999f;
@@ -35,13 +37,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isHoldingMove = false;
 
     private Coroutine dashCoroutine;
-    private Rigidbody rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         playerAttack = GetComponent<PlayerAttack>();
-        rb=GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
 
         normalMoveSpeed = moveSpeed;
 
@@ -49,80 +50,87 @@ public class PlayerMovement : MonoBehaviour
         RotateTowardCenter();
     }
 
-    void Update()
+void FixedUpdate()
+{
+    if (direction == 0f || radius <= 0.01f)
     {
-        LockToCircle();
+        rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
+        return;
+    }
 
-        if (direction == 0f || radius <= 0.01f)
+    float targetSpeed = direction * moveSpeed;
+
+    currentSpeed = Mathf.Lerp(
+        currentSpeed,
+        targetSpeed,
+        acceleration * Time.fixedDeltaTime
+    );
+
+    float radians = angle * Mathf.Deg2Rad;
+
+    Vector3 radialDirection = new Vector3(
+        Mathf.Cos(radians),
+        0f,
+        Mathf.Sin(radians)
+    );
+
+    Vector3 tangentDirection = new Vector3(
+        -radialDirection.z,
+        0f,
+        radialDirection.x
+    );
+
+    Vector3 velocity = tangentDirection * currentSpeed;
+
+    rb.linearVelocity = new Vector3(
+        velocity.x,
+        rb.linearVelocity.y,
+        velocity.z
+    );
+
+    RecalculateCirclePosition();
+    RotateTowardCenter();
+}
+
+    public void MoveRight()
+    {
+        RecalculateCirclePosition();
+
+        isHoldingMove = true;
+        animator.SetBool("IsWalking", true);
+
+        visualDirectionOffset = 0f;
+
+        if (Time.time - lastRightClickTime < doubleClickTime)
+        {
+            StartDash(-1f);
+            lastRightClickTime = -999f;
             return;
+        }
 
-        float targetSpeed = direction * moveSpeed;
-
-        currentSpeed = Mathf.Lerp(
-            currentSpeed,
-            targetSpeed,
-            acceleration * Time.deltaTime
-        );
-
-        float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
-        angle += angularVelocity * Time.deltaTime;
-
-        float radians = angle * Mathf.Deg2Rad;
-
-        Vector3 newPosition = circleCenter.position + new Vector3(
-            Mathf.Cos(radians) * radius,
-            0f,
-            Mathf.Sin(radians) * radius
-        );
-
-        newPosition.y = transform.position.y;
-        rb.MovePosition(newPosition);
-
-        RotateTowardCenter();
+        direction = -1f;
+        lastRightClickTime = Time.time;
     }
 
-public void MoveRight()
-{
-    RecalculateCirclePosition();
-
-    isHoldingMove = true;
-    animator.SetBool("IsWalking", true);
-
-    visualDirectionOffset = 0f;
-
-    if (Time.time - lastRightClickTime < doubleClickTime)
+    public void MoveLeft()
     {
-        StartDash(-1f);
-        lastRightClickTime = -999f;
-        return;
+        RecalculateCirclePosition();
+
+        isHoldingMove = true;
+        animator.SetBool("IsWalking", true);
+
+        visualDirectionOffset = 180f;
+
+        if (Time.time - lastLeftClickTime < doubleClickTime)
+        {
+            StartDash(1f);
+            lastLeftClickTime = -999f;
+            return;
+        }
+
+        direction = 1f;
+        lastLeftClickTime = Time.time;
     }
-
-    direction = -1f;
-    lastRightClickTime = Time.time;
-
-
-}
-
-public void MoveLeft()
-{
-    RecalculateCirclePosition();
-
-    isHoldingMove = true;
-    animator.SetBool("IsWalking", true);
-
-    visualDirectionOffset = 180f;
-
-    if (Time.time - lastLeftClickTime < doubleClickTime)
-    {
-        StartDash(1f);
-        lastLeftClickTime = -999f;
-        return;
-    }
-
-    direction = 1f;
-    lastLeftClickTime = Time.time;
-
-}
 
     public void StopMoving()
     {
@@ -196,46 +204,26 @@ public void MoveLeft()
         dashCoroutine = null;
     }
 
-    private void LockToCircle()
-    {
-        if (radius <= 0.01f)
-            return;
-
-        float radians = angle * Mathf.Deg2Rad;
-
-        Vector3 lockedPosition = circleCenter.position + new Vector3(
-            Mathf.Cos(radians) * radius,
-            0f,
-            Mathf.Sin(radians) * radius
-        );
-
-        lockedPosition.y = transform.position.y;
-        rb.MovePosition(lockedPosition);
-
-        RotateTowardCenter();
-    }
-
     private void RecalculateCirclePosition()
     {
-        Vector3 offset = transform.position - circleCenter.position;
+        Vector3 offset = rb.position - circleCenter.position;
         offset.y = 0f;
 
         radius = offset.magnitude;
         angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
     }
 
-private float visualDirectionOffset = 0f;
+    private void RotateTowardCenter()
+    {
+        Vector3 directionToCenter = circleCenter.position - rb.position;
+        directionToCenter.y = 0f;
 
-private void RotateTowardCenter()
-{
-    Vector3 directionToCenter = circleCenter.position - transform.position;
-    directionToCenter.y = 0f;
+        if (directionToCenter == Vector3.zero)
+            return;
 
-    if (directionToCenter == Vector3.zero)
-        return;
-
-    transform.rotation =
-        Quaternion.LookRotation(directionToCenter) *
-        Quaternion.Euler(0f, rotationOffsetY + visualDirectionOffset, 0f);
-}
+        rb.MoveRotation(
+            Quaternion.LookRotation(directionToCenter) *
+            Quaternion.Euler(0f, rotationOffsetY + visualDirectionOffset, 0f)
+        );
+    }
 }
