@@ -13,9 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float acceleration = 6f;
 
-    [Header("Collision")]
-    [SerializeField] private float collisionExtraDistance = 0.05f;
-
     [Header("Rotation")]
     [SerializeField] private float rotationOffsetY = 0f;
 
@@ -53,53 +50,47 @@ public class PlayerMovement : MonoBehaviour
         RotateTowardCenter();
     }
 
-    void FixedUpdate()
-    {
-        if (direction == 0f || radius <= 0.01f)
-            return;
-
-        float targetSpeed = direction * moveSpeed;
-
-        currentSpeed = Mathf.Lerp(
-            currentSpeed,
-            targetSpeed,
-            acceleration * Time.fixedDeltaTime
-        );
-
-        float angularVelocity = (currentSpeed / radius) * Mathf.Rad2Deg;
-        float nextAngle = angle + angularVelocity * Time.fixedDeltaTime;
-
-        float radians = nextAngle * Mathf.Deg2Rad;
-
-        Vector3 targetPosition = circleCenter.position + new Vector3(
-            Mathf.Cos(radians) * radius,
-            0f,
-            Mathf.Sin(radians) * radius
-        );
-
-        targetPosition.y = rb.position.y;
-
-        Vector3 move = targetPosition - rb.position;
-
-        if (move.magnitude < 0.001f)
-            return;
-
-bool blocked = rb.SweepTest(
-    move.normalized,
-    out RaycastHit hit,
-    move.magnitude + collisionExtraDistance,
-    QueryTriggerInteraction.Ignore
-);
-
-if (blocked)
+void FixedUpdate()
 {
-    currentSpeed = 0f;
-    return;
-}
-        angle = nextAngle;
-        rb.MovePosition(targetPosition);
-        RotateTowardCenter();
+    if (direction == 0f || radius <= 0.01f)
+    {
+        rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
+        return;
     }
+
+    float targetSpeed = direction * moveSpeed;
+
+    currentSpeed = Mathf.Lerp(
+        currentSpeed,
+        targetSpeed,
+        acceleration * Time.fixedDeltaTime
+    );
+
+    float radians = angle * Mathf.Deg2Rad;
+
+    Vector3 radialDirection = new Vector3(
+        Mathf.Cos(radians),
+        0f,
+        Mathf.Sin(radians)
+    );
+
+    Vector3 tangentDirection = new Vector3(
+        -radialDirection.z,
+        0f,
+        radialDirection.x
+    );
+
+    Vector3 velocity = tangentDirection * currentSpeed;
+
+    rb.linearVelocity = new Vector3(
+        velocity.x,
+        rb.linearVelocity.y,
+        velocity.z
+    );
+
+    RecalculateCirclePosition();
+    RotateTowardCenter();
+}
 
     public void MoveRight()
     {
