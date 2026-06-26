@@ -35,11 +35,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isHoldingMove = false;
 
     private Coroutine dashCoroutine;
+    private Rigidbody rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         playerAttack = GetComponent<PlayerAttack>();
+        rb=GetComponent<Rigidbody>();
 
         normalMoveSpeed = moveSpeed;
 
@@ -74,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
         );
 
         newPosition.y = transform.position.y;
-        transform.position = newPosition;
+        rb.MovePosition(newPosition);
 
         RotateTowardCenter();
     }
@@ -208,7 +210,7 @@ public void MoveLeft()
         );
 
         lockedPosition.y = transform.position.y;
-        transform.position = lockedPosition;
+        rb.MovePosition(lockedPosition);
 
         RotateTowardCenter();
     }
