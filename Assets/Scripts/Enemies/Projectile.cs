@@ -3,6 +3,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
        [SerializeField] private float damage = 5f;
+       private float targetY;
+       private float fireStartY;
 
     private Transform circleCenter;
     private float radius;
@@ -12,24 +14,27 @@ public class Projectile : MonoBehaviour
     private float maxDistance;
     private float travelledDistance;
 
-    public void Initialize(
-        Transform center,
-        float startRadius,
-        float startAngle,
-        float moveDirection,
-        float projectileSpeed,
-        float projectileDistance
-    )
-    {
-        circleCenter = center;
-        radius = startRadius;
-        angle = startAngle;
-        direction = moveDirection;
-        speed = projectileSpeed;
-        maxDistance = projectileDistance;
+public void Initialize(
+    Transform center,
+    float startRadius,
+    float startAngle,
+    float moveDirection,
+    float projectileSpeed,
+    float projectileDistance,
+    float playerY
+)
+{
+    fireStartY = transform.position.y;
+    circleCenter = center;
+    radius = startRadius;
+    angle = startAngle;
+    direction = moveDirection;
+    speed = projectileSpeed;
+    maxDistance = projectileDistance;
+    targetY = playerY;
 
-        transform.position = GetPositionOnCircle();
-    }
+    transform.position = GetPositionOnCircle();
+}
 
     void Update()
     {
@@ -50,19 +55,26 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private Vector3 GetPositionOnCircle()
-    {
-        float radians = angle * Mathf.Deg2Rad;
+private Vector3 GetPositionOnCircle()
+{
+    float radians = angle * Mathf.Deg2Rad;
 
-        Vector3 position = circleCenter.position + new Vector3(
-            Mathf.Cos(radians) * radius,
-            0f,
-            Mathf.Sin(radians) * radius
-        );
+    Vector3 position = circleCenter.position + new Vector3(
+        Mathf.Cos(radians) * radius,
+        0f,
+        Mathf.Sin(radians) * radius
+    );
 
-        position.y = transform.position.y;
-        return position;
-    }
+    float travelPercent = travelledDistance / maxDistance;
+
+    position.y = Mathf.Lerp(
+        fireStartY,
+        targetY,
+        travelPercent
+    );
+
+    return position;
+}
 
     private void OnTriggerEnter(Collider other)
     {

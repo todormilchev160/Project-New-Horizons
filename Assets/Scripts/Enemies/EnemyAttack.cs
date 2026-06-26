@@ -49,13 +49,14 @@ public class EnemyAttack : MonoBehaviour
             Projectile projectileScript =
             projectile.GetComponent<Projectile>();
 
-        projectileScript.Initialize(
-            circleCenter,
-            projectileRadius,
-            projectileAngle,
-            direction,
-            projectileSpeed,
-            projectileDistance
-        );
+projectileScript.Initialize(
+    circleCenter,
+    projectileRadius,
+    projectileAngle,
+    direction,
+    projectileSpeed,
+    projectileDistance,
+    player.position.y
+);
     }
 }
