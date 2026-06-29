@@ -28,33 +28,47 @@ public class ScoreManager : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(drumscore);
-         guitarBar.fillAmount=(float)guitarscore/maxGuitarscore;
-         drumBar.fillAmount=(float)drumscore/maxDrumscore;
-         keyboardBar.fillAmount=(float)keyboardscore/maxKeyboardscore;
-         productionBar.fillAmount=(float)productionscore/maxProductionscore;
          
     }
 
     public void AddDrumScore(int amount)
     {
         drumscore += amount;
+        UpdateDrumScore();
          
     }
     public void AddGuitarScore(int amount)
     {
         guitarscore+=amount;
+        UpdateGuitarScore();
         
     }
     public void AddKeyboardScore(int amount)
     {
         keyboardscore += amount;
-     
+        UpdateKeyboardScore();
     }
     public void AddProductionScore(int amount)
     {
         productionscore+=amount;
+        UpdateProductionScore();
+    }
+    public void UpdateDrumScore()
+    {
+        drumBar.fillAmount=(float)drumscore/maxDrumscore;
+    }
+    public void UpdateGuitarScore()
+    {
+        guitarBar.fillAmount=(float)guitarscore/maxGuitarscore;
+    }
+    public void UpdateKeyboardScore()
 
+    {
+        keyboardBar.fillAmount=(float)keyboardscore/maxKeyboardscore;
+    }
+    public void UpdateProductionScore()
+    {
+         productionBar.fillAmount=(float)productionscore/maxProductionscore;
     }
 
     public void LoseScore(float amount)

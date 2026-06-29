@@ -16,8 +16,9 @@ public class EnemyWeakpoint : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player")&&other.GetComponentInParent<Rigidbody>().linearVelocity.y<=0)
         {
+            
             GetComponentInParent<EnemyHealth>().Die();
         }
     }
