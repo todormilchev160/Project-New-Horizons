@@ -62,3 +62,9 @@ fmod_editor.log
 # FMOD 1.10.x (Legacy)
 /Assets/FMODAssets/*
 /Assets/FMODStudioCache.meta
+# Unity generated
+Logs/
+UserSettings/
+
+# Personal editor settings
+.vscode/settings.json
