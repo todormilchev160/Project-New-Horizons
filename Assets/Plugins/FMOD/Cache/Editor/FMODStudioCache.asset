@@ -648,6 +648,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8795
+--- !u!114 &-5566906803839716981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum3
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum3
+  Guid:
+    Data1: 1920231475
+    Data2: 1328736832
+    Data3: -287781977
+    Data4: 1430579535
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11363
+--- !u!114 &-5514302329848988687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Metronome
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Metronome
+  Guid:
+    Data1: -997389481
+    Data2: 1244452497
+    Data3: -583417174
+    Data4: -1184186421
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11363
 --- !u!114 &-5385339778448823837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +756,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4876
+--- !u!114 &-5105826589272174480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtrack
+  Guid:
+    Data1: 1333663335
+    Data2: 1197453067
+    Data3: 447383942
+    Data4: 1615123937
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1442289897442333309}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 192000
 --- !u!114 &-5093343185617830781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,6 +2044,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-128089982371611712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum2
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum2
+  Guid:
+    Data1: -1059804291
+    Data2: 1246470876
+    Data3: 573402303
+    Data4: -790317373
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11363
 --- !u!114 &-85708842798041496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,239 +2111,35 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8807852635172125604}
-  - {fileID: -3496201260742667978}
+  - {fileID: 4906077406147971672}
+  - {fileID: 878581377560553670}
   EditorEvents:
-  - {fileID: 7165838878350549871}
-  - {fileID: 1256432627828547583}
-  - {fileID: -6339524211395748181}
-  - {fileID: 8818463793479809522}
-  - {fileID: 1413179089779055464}
-  - {fileID: -2124641325024133470}
-  - {fileID: -3037522272445073707}
-  - {fileID: 8002192415281767640}
-  - {fileID: 4628233782214638680}
-  - {fileID: -3675892245614240124}
-  - {fileID: 673893718679182210}
-  - {fileID: -5781199138425203826}
-  - {fileID: -4439628968224940625}
-  - {fileID: 571628964896830471}
-  - {fileID: -5385339778448823837}
-  - {fileID: 6813977423027310286}
-  - {fileID: -321004314449499776}
-  - {fileID: -1659109357748471123}
-  - {fileID: 1730305379109646462}
-  - {fileID: 5830101446626884105}
-  - {fileID: 1530174311230095480}
-  - {fileID: 8066434316046174002}
-  - {fileID: 656351535991972822}
-  - {fileID: -9053178363811382428}
-  - {fileID: -8839878337667464888}
-  - {fileID: 875931966257319475}
-  - {fileID: 4525726437363270425}
-  - {fileID: 3033846300449140885}
-  - {fileID: -2800981928883208896}
-  - {fileID: -6292537034808124180}
-  - {fileID: -1520841454891071910}
-  - {fileID: -3048180724913411057}
-  - {fileID: -5013680535859691312}
-  - {fileID: 7949994355722470066}
-  - {fileID: -4418195831529532400}
-  - {fileID: 694389277461877997}
-  - {fileID: 3453041748748302238}
-  - {fileID: -3462226519133152989}
-  - {fileID: 5717441527582082097}
-  - {fileID: 1323316963853943640}
-  - {fileID: 6768497789660741241}
-  - {fileID: -1434377511325023871}
-  - {fileID: 933728570569763083}
-  - {fileID: 5818439138549688150}
-  - {fileID: -8367330707445069481}
-  - {fileID: 2999495656421775087}
-  - {fileID: 1752850482439795175}
-  - {fileID: 701586492753831794}
-  - {fileID: 1660303962061988554}
-  - {fileID: 2239383082794507012}
-  - {fileID: 5575041000999716160}
-  - {fileID: 6604130126350246853}
-  - {fileID: 2809208640417355467}
-  - {fileID: 2001089586488900299}
-  - {fileID: -4919341879540355192}
-  - {fileID: 5706107606954419429}
-  - {fileID: -4710663592640779029}
-  - {fileID: -3917572735307617464}
-  - {fileID: 7124118473975489599}
-  - {fileID: -6504767049062227200}
-  - {fileID: 409026626097207463}
-  - {fileID: -2938960082642361249}
-  - {fileID: -4214844940768189537}
-  - {fileID: 7633560079228265917}
-  - {fileID: -6875976008993732531}
-  - {fileID: -5278938681034334861}
-  - {fileID: 5376009854949536016}
-  - {fileID: -7584396141061986139}
-  - {fileID: 2245532939195704462}
-  - {fileID: 431250284559678008}
-  - {fileID: -4973790522904450688}
-  - {fileID: -4266718152589385227}
-  - {fileID: -1490752932459704435}
-  - {fileID: 8656760249062322797}
+  - {fileID: -5566906803839716981}
+  - {fileID: 6938771366413269381}
+  - {fileID: -5514302329848988687}
+  - {fileID: -5105826589272174480}
+  - {fileID: -128089982371611712}
+  - {fileID: 6507812440173318962}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -3496201260742667978}
+  - {fileID: 878581377560553670}
   StringsBanks:
-  - {fileID: -8807852635172125604}
+  - {fileID: 4906077406147971672}
   cacheVersion: 131860
-  cacheTime: 639183226212194449
+  cacheTime: 639180086291284303
   SerializableEventsDict:
-  - key: event:/Joseph 13
+  - key: event:/SketchPunk_Drum3
     index: 0
-  - key: event:/Frederick 9
+  - key: event:/SketchPunk_Drum4
     index: 1
-  - key: event:/Jason 26
+  - key: event:/SketchPunk_Metronome
     index: 2
-  - key: event:/Jason 25
+  - key: event:/Soundtrack
     index: 3
-  - key: event:/Joseph 2
+  - key: event:/SketchPunk_Drum2
     index: 4
-  - key: event:/Joseph 6
+  - key: event:/SketchPunk_Drum1
     index: 5
-  - key: event:/Frederick 6
-    index: 6
-  - key: event:/Jason 23
-    index: 7
-  - key: event:/Jason 6
-    index: 8
-  - key: event:/Target
-    index: 9
-  - key: event:/Target 3
-    index: 10
-  - key: event:/Frederick 2
-    index: 11
-  - key: event:/Frederick 15
-    index: 12
-  - key: event:/Jason 8
-    index: 13
-  - key: event:/Target 5
-    index: 14
-  - key: event:/Jason 14
-    index: 15
-  - key: event:/Jason 10
-    index: 16
-  - key: event:/Jason 15
-    index: 17
-  - key: event:/Joseph 11
-    index: 18
-  - key: event:/Jason 24
-    index: 19
-  - key: event:/Jason 13
-    index: 20
-  - key: event:/Jason
-    index: 21
-  - key: event:/Jason 9
-    index: 22
-  - key: event:/Joseph 5
-    index: 23
-  - key: event:/Jason 4
-    index: 24
-  - key: event:/Footstepguards
-    index: 25
-  - key: event:/Lamps
-    index: 26
-  - key: event:/Soundtrack garage
-    index: 27
-  - key: event:/Joseph
-    index: 28
-  - key: event:/Jason 5
-    index: 29
-  - key: event:/Jason 17
-    index: 30
-  - key: event:/Frederick 4
-    index: 31
-  - key: event:/Jason 27
-    index: 32
-  - key: event:/Footstep 1
-    index: 33
-  - key: event:/Frederick
-    index: 34
-  - key: event:/Jason 11
-    index: 35
-  - key: event:/Jason 20
-    index: 36
-  - key: event:/Jason 18
-    index: 37
-  - key: event:/Jason 28
-    index: 38
-  - key: event:/Joseph 4
-    index: 39
-  - key: event:/Frederick 12
-    index: 40
-  - key: event:/Jason 12
-    index: 41
-  - key: event:/Target 2
-    index: 42
-  - key: event:/Soundtrack house
-    index: 43
-  - key: event:/Jason 29
-    index: 44
-  - key: event:/Joseph 15
-    index: 45
-  - key: event:/Jason 7
-    index: 46
-  - key: event:/Jason 2
-    index: 47
-  - key: event:/Frederick 5
-    index: 48
-  - key: event:/Jason 16
-    index: 49
-  - key: event:/Frederick 11
-    index: 50
-  - key: event:/Jason 19
-    index: 51
-  - key: event:/Jason 21
-    index: 52
-  - key: event:/Frederick 8
-    index: 53
-  - key: event:/Joseph 8
-    index: 54
-  - key: event:/Gun
-    index: 55
-  - key: event:/Joseph 9
-    index: 56
-  - key: event:/Frederick 13
-    index: 57
-  - key: event:/Pan
-    index: 58
-  - key: event:/Jason 3
-    index: 59
-  - key: event:/Frederick 10
-    index: 60
-  - key: event:/Frederick 14
-    index: 61
-  - key: event:/Concrete
-    index: 62
-  - key: event:/Target 4
-    index: 63
-  - key: event:/Jason 22
-    index: 64
-  - key: event:/Frederick 3
-    index: 65
-  - key: event:/Joseph 10
-    index: 66
-  - key: event:/Carpet footstep
-    index: 67
-  - key: event:/Joseph 3
-    index: 68
-  - key: event:/Joseph 7
-    index: 69
-  - key: event:/Frederick 7
-    index: 70
-  - key: event:/Joseph 14
-    index: 71
-  - key: event:/Joseph 16
-    index: 72
-  - key: event:/Enemy gunfire
-    index: 73
 --- !u!114 &23643840768827261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2532,6 +2437,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 340
+--- !u!114 &878581377560553670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../SketchPunk/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639180086291218808
+  FileSizes:
+  - Name: Desktop
+    Value: 2924768
+  Exists: 1
 --- !u!114 &933728570569763083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2775,6 +2700,39 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9936
+--- !u!114 &1442289897442333309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Soundtrack/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 2368143284
+    data2: 3552094673
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Metronome
+  - Drum1
+  - Drum2
+  - Drum3
+  - Drum4
+  - Guitar1
+  - Guitar2
+  - Guitar3
+  - Guitar4
+  Exists: 1
 --- !u!114 &1481480283852916765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3586,6 +3544,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3544
+--- !u!114 &4906077406147971672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../SketchPunk/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639180086291284303
+  FileSizes:
+  - Name: Desktop
+    Value: 1038
+  Exists: 1
 --- !u!114 &5376009854949536016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3911,6 +3889,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3860
+--- !u!114 &6507812440173318962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum1
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum1
+  Guid:
+    Data1: 1860043934
+    Data2: 1086882369
+    Data3: 599158694
+    Data4: 425819373
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11363
 --- !u!114 &6604130126350246853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4019,6 +4024,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3628
+--- !u!114 &6938771366413269381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum4
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum4
+  Guid:
+    Data1: 282802490
+    Data2: 1328496663
+    Data3: -953664106
+    Data4: -1955121309
+  Banks:
+  - {fileID: 878581377560553670}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11363
 --- !u!114 &6979221859728524246
 MonoBehaviour:
   m_ObjectHideFlags: 0
