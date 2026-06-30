@@ -160,4 +160,9 @@ public class ScoreManager : MonoBehaviour
             productionscore-=amount;
         }
     }
+    void OnDestroy()
+    {
+        soundtrack.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        soundtrack.release();
+    }
 }
