@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-
 public class GuitarCollectible : MonoBehaviour
 {
     [SerializeField] private int scoreAmount = 1;

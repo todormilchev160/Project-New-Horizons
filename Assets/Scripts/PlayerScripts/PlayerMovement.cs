@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,6 +23,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashMomentumTime = 0.12f;
     [SerializeField] private float doubleClickTime = 0.3f;
     [SerializeField] private float dashCooldown = 0.5f;
+
+    [Header("FMOD Footsteps")]
+    [SerializeField] private EventReference FootstepEvent;
+    [SerializeField] private float WalkStepRate = 0.5f;
+    [SerializeField] private float DashStepRate = 0.32f;
+
+    private float footstepTimer = 0f;
 
     private float angle;
     private float direction = 0f;
@@ -50,47 +58,75 @@ public class PlayerMovement : MonoBehaviour
         RotateTowardCenter();
     }
 
-void FixedUpdate()
-{
-    if (direction == 0f || radius <= 0.01f)
+    void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
-        return;
+        if (direction == 0f || radius <= 0.01f)
+        {
+            rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
+            footstepTimer = 0f;
+            return;
+        }
+
+        float targetSpeed = direction * moveSpeed;
+
+        currentSpeed = Mathf.Lerp(
+            currentSpeed,
+            targetSpeed,
+            acceleration * Time.fixedDeltaTime
+        );
+
+        float radians = angle * Mathf.Deg2Rad;
+
+        Vector3 radialDirection = new Vector3(
+            Mathf.Cos(radians),
+            0f,
+            Mathf.Sin(radians)
+        );
+
+        Vector3 tangentDirection = new Vector3(
+            -radialDirection.z,
+            0f,
+            radialDirection.x
+        );
+
+        Vector3 velocity = tangentDirection * currentSpeed;
+
+        rb.linearVelocity = new Vector3(
+            velocity.x,
+            rb.linearVelocity.y,
+            velocity.z
+        );
+
+        HandleFootsteps();
+
+        RecalculateCirclePosition();
+        RotateTowardCenter();
     }
 
-    float targetSpeed = direction * moveSpeed;
+    private void HandleFootsteps()
+    {
+        Vector3 horizontalVelocity = new Vector3(
+            rb.linearVelocity.x,
+            0f,
+            rb.linearVelocity.z
+        );
 
-    currentSpeed = Mathf.Lerp(
-        currentSpeed,
-        targetSpeed,
-        acceleration * Time.fixedDeltaTime
-    );
+        if (horizontalVelocity.magnitude < 0.1f)
+        {
+            footstepTimer = 0f;
+            return;
+        }
 
-    float radians = angle * Mathf.Deg2Rad;
+        float stepRate = isDashing ? DashStepRate : WalkStepRate;
 
-    Vector3 radialDirection = new Vector3(
-        Mathf.Cos(radians),
-        0f,
-        Mathf.Sin(radians)
-    );
+        footstepTimer -= Time.fixedDeltaTime;
 
-    Vector3 tangentDirection = new Vector3(
-        -radialDirection.z,
-        0f,
-        radialDirection.x
-    );
-
-    Vector3 velocity = tangentDirection * currentSpeed;
-
-    rb.linearVelocity = new Vector3(
-        velocity.x,
-        rb.linearVelocity.y,
-        velocity.z
-    );
-
-    RecalculateCirclePosition();
-    RotateTowardCenter();
-}
+        if (footstepTimer <= 0f)
+        {
+            RuntimeManager.PlayOneShot(FootstepEvent, transform.position);
+            footstepTimer = stepRate;
+        }
+    }
 
     public void MoveRight()
     {
@@ -135,6 +171,7 @@ void FixedUpdate()
     public void StopMoving()
     {
         isHoldingMove = false;
+        footstepTimer = 0f;
 
         if (isDashing)
             return;

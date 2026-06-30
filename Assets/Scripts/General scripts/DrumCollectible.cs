@@ -16,7 +16,6 @@ public class DrumCollectible : MonoBehaviour
         
         if (PickupManager.IsCollected(pickupID))
         {
-            Debug.Log("pickup");
             Destroy(gameObject);
         }
     }

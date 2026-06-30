@@ -10,12 +10,15 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private float projectileSpeed = 10f;
     [SerializeField] private float projectileDistance = 15f;
     [SerializeField]private float fireRate=2;
+    private Rigidbody rb;
 
     void Start()
     {
         InvokeRepeating(nameof(Shoot), 1f, fireRate);
-    }
-
+        rb=GetComponent<Rigidbody>();
+        rb.constraints=RigidbodyConstraints.FreezePositionX;
+        rb.constraints=RigidbodyConstraints.FreezePositionZ;
+    }  
     public void Shoot()
     {
         Vector3 enemyOffset = firePoint.position - circleCenter.position;

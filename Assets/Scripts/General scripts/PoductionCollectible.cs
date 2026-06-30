@@ -16,7 +16,6 @@ public class ProductionCollectible : MonoBehaviour
         
         if (PickupManager.IsCollected(pickupID))
         {
-            Debug.Log("pickup");
             Destroy(gameObject);
         }
     }

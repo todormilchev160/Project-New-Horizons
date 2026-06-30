@@ -16,7 +16,7 @@ public class KeyboardColletible : MonoBehaviour
         
         if (PickupManager.IsCollected(pickupID))
         {
-            Debug.Log("pickup");
+        
             Destroy(gameObject);
         }
     }
