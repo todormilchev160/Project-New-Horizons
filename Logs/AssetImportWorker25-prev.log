@@ -1,0 +1,1045 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.56f1 (9c7b5e468860) revision 10255198'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'en' Physical Memory: 65237 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-06-30T08:59:55Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.56f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker25
+-projectPath
+C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons
+-logFile
+Logs/AssetImportWorker25.log
+-srvPort
+56145
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons
+C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7224]  Target information:
+
+Player connection [7224]  * "[IP] 145.76.71.186 [Port] 0 [Flags] 2 [Guid] 2836952941 [EditorId] 2836952941 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [7224] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7224] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 15.97 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.56f1 (9c7b5e468860)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/maxni/OneDrive/Documenten/School/Saxion/Semester 2/Project New Horizons/Project/Project-New-Horizons/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4090 Laptop GPU (ID=0x2717)
+    Vendor:   NVIDIA
+    VRAM:     16048 MB
+    Driver:   32.0.15.9597
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.56f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.003371 seconds.
+- Loaded All Assemblies, in  0.286 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 193 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.482 seconds
+Domain Reload Profiling: 766ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (93ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (103ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (482ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (447ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (269ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (93ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.650 seconds
+Refreshing native plugins compatible for Editor in 12.69 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Project-New-Horizons
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.633 seconds
+Domain Reload Profiling: 1277ms
+	BeginReloadAssembly (128ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (455ms)
+		LoadAssemblies (285ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (143ms)
+			BuildScriptInfoCaches (66ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (633ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (481ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (289ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 10.95 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7395 unused Assets / (5.1 MB). Loaded Objects now: 8028.
+Memory consumption went from 142.9 MB to 137.7 MB.
+Total: 6.993200 ms (FindLiveObjects: 0.643700 ms CreateObjectMapping: 0.533700 ms MarkObjects: 3.918700 ms  DeleteObjects: 1.896400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38785.521224 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat
+  artifactKey: Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat using Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b74cdea1943467d580e7c152cb6663c9') in 0.3841653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.265797 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Record player.mat
+  artifactKey: Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Record player.mat using Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '078a64330dc7b62f23ce8a4f59fa83db') in 0.0295948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.749 seconds
+Refreshing native plugins compatible for Editor in 15.30 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.712 seconds
+Domain Reload Profiling: 1457ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (474ms)
+		LoadAssemblies (360ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (198ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (174ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (713ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (556ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (322ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 16.35 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7394 unused Assets / (4.8 MB). Loaded Objects now: 8110.
+Memory consumption went from 176.1 MB to 171.3 MB.
+Total: 8.679800 ms (FindLiveObjects: 0.682500 ms CreateObjectMapping: 0.399900 ms MarkObjects: 5.138700 ms  DeleteObjects: 2.457300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 105.167256 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Record player.mat
+  artifactKey: Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Record player.mat using Guid(a6c20e804213cc0459c0f928a885bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2d7fd63a1f7edc9ee3a752d0f8a6c2a') in 0.4591866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.460382 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Box.mat
+  artifactKey: Guid(decd8e602c3f39b41bd0b668067ec3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Box.mat using Guid(decd8e602c3f39b41bd0b668067ec3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68d98527f0ce0c54d51b500f527f78eb') in 0.0289622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.227787 seconds.
+  path: Assets/Art/Textures/Props/Metronome/metronome2_sp_openPBR_shader1_BaseMap.png
+  artifactKey: Guid(958ecd0e4cc4b23439a7a4c4965bafe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Props/Metronome/metronome2_sp_openPBR_shader1_BaseMap.png using Guid(958ecd0e4cc4b23439a7a4c4965bafe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7881ef81711dda5ce24c80d32a270c43') in 0.0300279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Textures/Props/Metronome/metronome2_sp_openPBR_shader1_Normal.png
+  artifactKey: Guid(0445f2016b0bb1f4aa76a2e60f868f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Props/Metronome/metronome2_sp_openPBR_shader1_Normal.png using Guid(0445f2016b0bb1f4aa76a2e60f868f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd61f0e794c02edcaf1244b8374d3522b') in 0.0192859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.545450 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Amps/Small/mini.mat
+  artifactKey: Guid(676c1b3d252ae434cabc93cdfcb424a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Amps/Small/mini.mat using Guid(676c1b3d252ae434cabc93cdfcb424a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ae3e3fc579a9078d46ebee7340e60a4') in 0.0380708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.401670 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Amps/Correct Mini amp.prefab
+  artifactKey: Guid(2694e0e1beaebc24e9bab0f2e075d70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Amps/Correct Mini amp.prefab using Guid(2694e0e1beaebc24e9bab0f2e075d70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7fc0db5ee3b44c86e09e6f256707dd9') in 0.0489256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.689406 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Box.mat
+  artifactKey: Guid(decd8e602c3f39b41bd0b668067ec3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Box.mat using Guid(decd8e602c3f39b41bd0b668067ec3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f34fa7cf1de8adffacb5276a10d54f2') in 0.0346828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.735884 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Shelf 1.mat
+  artifactKey: Guid(a4cd003126388f241be9b447799e89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Shelf 1.mat using Guid(a4cd003126388f241be9b447799e89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '659a95ce12288b9b4b73963e9559b793') in 0.0245572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.887838 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd
+  artifactKey: Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd using Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '308ba852167387d62c4b76dd447813b2') in 0.0294904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.265864 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Shelf 1.mat
+  artifactKey: Guid(a4cd003126388f241be9b447799e89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Shelf 1.mat using Guid(a4cd003126388f241be9b447799e89d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24de900ed7a9d9918a2aabf5247d6ad1') in 0.0198007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.389417 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/CD's/Open CD/CD open rancid 1.mat
+  artifactKey: Guid(050e1ca1d509fbb43b251fd5cab5b7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/CD's/Open CD/CD open rancid 1.mat using Guid(050e1ca1d509fbb43b251fd5cab5b7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c1d5076b8774f3932bd2fa6cf3e3f43') in 0.030688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.562412 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Shelf 2.mat
+  artifactKey: Guid(cf711bb3a516b8c4299f56fc6b1f8080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Shelf 2.mat using Guid(cf711bb3a516b8c4299f56fc6b1f8080) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63c0ced7b175256aea8b0e7aa0642df8') in 0.0223017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.119455 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat
+  artifactKey: Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat using Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ed9ef037556beca87a8ce4e199a7f2d') in 0.0264006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.373910 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Mini Mic.mat
+  artifactKey: Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Mini Mic.mat using Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43900cfaab6435f3fa6f6f39195926cb') in 0.0272743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.804861 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Mini Mic.mat
+  artifactKey: Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Mini Mic.mat using Guid(e35d203713b869f4bb860f231b8f7c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ba9b42586619ea591a34cbb57f013b8') in 0.0206847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.288827 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Dj deck.mat
+  artifactKey: Guid(b98c59c2034013d42ba80d3f57cd123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Dj deck.mat using Guid(b98c59c2034013d42ba80d3f57cd123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '786279c4c932e618cb00b1f46e996315') in 0.0230946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.613416 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/tisss_sp (2).prefab
+  artifactKey: Guid(6bbd0372c84b1334fb2916840e06a910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/tisss_sp (2).prefab using Guid(6bbd0372c84b1334fb2916840e06a910) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd91592500172e715ff03b9270706b38') in 0.029467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/Walkable mini amp.prefab
+  artifactKey: Guid(552a6c1eeb1bd5b4199348f9b93f42ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/Walkable mini amp.prefab using Guid(552a6c1eeb1bd5b4199348f9b93f42ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f23cd1c9131b702b3bd4bfb4d8256f8') in 0.0251219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.736500 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Dj deck.mat
+  artifactKey: Guid(b98c59c2034013d42ba80d3f57cd123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Dj deck.mat using Guid(b98c59c2034013d42ba80d3f57cd123e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce0075c7ade39043bbfc89220834f196') in 0.0287461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.192909 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Metronome.mat
+  artifactKey: Guid(ec425e3e15ade414f88848828fbbf1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Metronome.mat using Guid(ec425e3e15ade414f88848828fbbf1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e258b9d95e40f47636bd1f50b4182c8') in 0.0229891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.425045 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums
+  artifactKey: Guid(f88741bb4c7496a4889b253ae8728c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums using Guid(f88741bb4c7496a4889b253ae8728c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8b55e4dd6b4dceec1796e300fbb87b1') in 0.0006029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.707306 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss
+  artifactKey: Guid(fa0c56478fcfb254b93f6e0ef9408b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss using Guid(fa0c56478fcfb254b93f6e0ef9408b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52b27693d7ad630eb91f8e2b084d7569') in 0.0004693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.990287 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss 1
+  artifactKey: Guid(bda850e257e45d142aa1ef3bbf533d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss 1 using Guid(bda850e257e45d142aa1ef3bbf533d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '749b5d3632b7164b97a20270d711107d') in 0.0005287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.580814 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss
+  artifactKey: Guid(bda850e257e45d142aa1ef3bbf533d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss using Guid(bda850e257e45d142aa1ef3bbf533d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee8cfed26662e3f005953f253dd0ecda') in 0.0004735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.548051 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall
+  artifactKey: Guid(3afd378f2724b784d902ad85e10db689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall using Guid(3afd378f2724b784d902ad85e10db689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8c2775cc0c5af23cdb4adfb1a919d34') in 0.0004365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 372.158055 seconds.
+  path: Assets/Scenes/Max Level Layout/LightingData.asset
+  artifactKey: Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/LightingData.asset using Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62c412410f58ef0056f27333dc2c8a77') in 0.0013565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.100897 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/New Folder
+  artifactKey: Guid(fcfef01cf14e23a458985c64b771aec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/New Folder using Guid(fcfef01cf14e23a458985c64b771aec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2ec8e3b06571506a90ea1a701897fcc') in 0.0005313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.162002 seconds.
+  path: Assets/Scenes/Max Level Layout/LightingData.asset
+  artifactKey: Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/LightingData.asset using Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28624561898b2c59430888f6de23189c') in 0.0011787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.804312 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/Walkable mini amp.prefab
+  artifactKey: Guid(552a6c1eeb1bd5b4199348f9b93f42ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/Walkable mini amp.prefab using Guid(552a6c1eeb1bd5b4199348f9b93f42ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80666273461f22674f0dce3b1fbd7d78') in 0.0318389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.673479 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e3a4579951ee29ee8cc08ad877e1c5f') in 0.0258369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.795496 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3906e241023722cebbcef10e1dc5644') in 0.0083806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.195699 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eeb7d862b7d57ee42c77ad43d04697d4') in 0.0086326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.160268 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d7b6f21f861d8239dca32e9db68b653') in 0.0099637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.897657 seconds.
+  path: Assets/Scenes/Max Level Layout/LightingData.asset
+  artifactKey: Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/LightingData.asset using Guid(980f363bff927a84eb5329c04a8727d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3735441a00da55d98fa3d95aea426ac3') in 0.0011093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 434.334608 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ae1de8e43e7103019b9683efeb0658a') in 0.0090112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.036458 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26748d110ab94eb1a3456a9775ea5953') in 0.0146657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.393408 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e94bdd616bf0bf2dae14f81ce4e093bb') in 0.0101658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.205014 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e7f21d8d3d9e4b120e26506e3497716') in 0.0105904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.736 seconds
+Refreshing native plugins compatible for Editor in 16.70 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.693 seconds
+Domain Reload Profiling: 1427ms
+	BeginReloadAssembly (193ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (205ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (182ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (694ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (546ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (313ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 17.52 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7394 unused Assets / (4.9 MB). Loaded Objects now: 8136.
+Memory consumption went from 176.2 MB to 171.2 MB.
+Total: 8.039200 ms (FindLiveObjects: 0.591300 ms CreateObjectMapping: 0.339700 ms MarkObjects: 4.763900 ms  DeleteObjects: 2.342400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.760 seconds
+Refreshing native plugins compatible for Editor in 15.14 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.737 seconds
+Domain Reload Profiling: 1494ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (499ms)
+		LoadAssemblies (369ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (192ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (738ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (580ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (332ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 18.23 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7393 unused Assets / (4.9 MB). Loaded Objects now: 8139.
+Memory consumption went from 176.0 MB to 171.1 MB.
+Total: 8.732800 ms (FindLiveObjects: 0.618700 ms CreateObjectMapping: 0.528300 ms MarkObjects: 4.973400 ms  DeleteObjects: 2.611100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.830 seconds
+Refreshing native plugins compatible for Editor in 16.81 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.777 seconds
+Domain Reload Profiling: 1604ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (397ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (209ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (777ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (604ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (347ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 21.31 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7393 unused Assets / (4.8 MB). Loaded Objects now: 8142.
+Memory consumption went from 176.1 MB to 171.2 MB.
+Total: 8.789400 ms (FindLiveObjects: 0.727900 ms CreateObjectMapping: 0.378200 ms MarkObjects: 5.327600 ms  DeleteObjects: 2.354400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 198.155716 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Metronome.mat
+  artifactKey: Guid(ec425e3e15ade414f88848828fbbf1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Metronome.mat using Guid(ec425e3e15ade414f88848828fbbf1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa284b96d4684b196a48586226d5b05e') in 0.4863181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.787956 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Seat
+  artifactKey: Guid(fcfef01cf14e23a458985c64b771aec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Seat using Guid(fcfef01cf14e23a458985c64b771aec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ec703431292d6ac7ace71b30d454a37') in 0.000977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.729337 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Seat/Drum seat.mat
+  artifactKey: Guid(9e650bd9e9d6c5f40a1f7d9f40209cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Seat/Drum seat.mat using Guid(9e650bd9e9d6c5f40a1f7d9f40209cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e965beb3250b4973a03ce161e18426a9') in 0.0183786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.425102 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall/Tall Drum.mat
+  artifactKey: Guid(1f22312c53f2ebe4ca0aa4e70a64cd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall/Tall Drum.mat using Guid(1f22312c53f2ebe4ca0aa4e70a64cd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b50d6543ba37a70f7a85fd000d3dd4c') in 0.0244942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.843750 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Big drum
+  artifactKey: Guid(757ca61fe899ddb4fbb227ad652b618e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Big drum using Guid(757ca61fe899ddb4fbb227ad652b618e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4664d239bdfbc56315acc7282ee0b2dd') in 0.0005119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.427316 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Big drum/Big drum.mat
+  artifactKey: Guid(a89f657a1a2e8d54381753f8f9f67dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Big drum/Big drum.mat using Guid(a89f657a1a2e8d54381753f8f9f67dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f50947c0c1fa41599b1bee3e8253793') in 0.0222436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.415211 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Fat drum
+  artifactKey: Guid(23ca16c9dea397c428624ea57871c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Fat drum using Guid(23ca16c9dea397c428624ea57871c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5ca8f88850240e35a79d7728ff25564') in 0.0005387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.368837 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Fat drum/Fat drum.mat
+  artifactKey: Guid(4fe1c093e60d8a443b9fccddd1de53b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Fat drum/Fat drum.mat using Guid(4fe1c093e60d8a443b9fccddd1de53b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04f7d302e6762ee1e127cf4298750bcc') in 0.0215479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.489520 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall/Tall Drum.mat
+  artifactKey: Guid(1f22312c53f2ebe4ca0aa4e70a64cd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum Tall/Tall Drum.mat using Guid(1f22312c53f2ebe4ca0aa4e70a64cd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fdb37dcf6a093a2301e5d057c3bd94d') in 0.0260015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.190850 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss/Tis.mat
+  artifactKey: Guid(61deb8a48196b7448a89b091557f4095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss/Tis.mat using Guid(61deb8a48196b7448a89b091557f4095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16b60a6348d7b270111b40955942f942') in 0.0218103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.345773 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss/Pis.mat
+  artifactKey: Guid(88cc587a745c73242b466957a069e0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Piss/Pis.mat using Guid(88cc587a745c73242b466957a069e0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b2a050eec7f790fdef8b1a62b874f17') in 0.0269279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.986801 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss/Tis.mat
+  artifactKey: Guid(61deb8a48196b7448a89b091557f4095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Tiss/Tis.mat using Guid(61deb8a48196b7448a89b091557f4095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1aff52cba93550681e2c119b7d6059d9') in 0.0227361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.514097 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum single
+  artifactKey: Guid(70f3e1c60bd33a74fabd113a06f8b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum single using Guid(70f3e1c60bd33a74fabd113a06f8b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '901a6c1e4d18b69a38132254da40ef75') in 0.0005779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.379855 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum single/Drum single.mat
+  artifactKey: Guid(2305e7da203974c439970e51fbe17263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Drums/Drum single/Drum single.mat using Guid(2305e7da203974c439970e51fbe17263) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ef1d2b500c003375a3739c6d6c48097') in 0.0202592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.406058 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd22d677ec7c244db322345ded5bd0dc9') in 0.0522173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.319670 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '856ae1d515223d3640aa714ed0eebfdb') in 0.0085272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.166159 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c62a4a7e9ca16b192b1aaad53da4c50') in 0.011145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.047 seconds
+Refreshing native plugins compatible for Editor in 21.96 ms, found 11 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.960 seconds
+Domain Reload Profiling: 7003ms
+	BeginReloadAssembly (849ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (302ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (4840ms)
+		LoadAssemblies (5051ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (486ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (453ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (961ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (745ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (419ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 19.01 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7394 unused Assets / (4.8 MB). Loaded Objects now: 8165.
+Memory consumption went from 176.3 MB to 171.5 MB.
+Total: 8.697500 ms (FindLiveObjects: 0.655000 ms CreateObjectMapping: 0.388100 ms MarkObjects: 5.347300 ms  DeleteObjects: 2.305300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 581.242408 seconds.
+  path: Assets/Art/3D PREFABS/Amplifier_mini2_sp.prefab
+  artifactKey: Guid(8feb0679a9455a644843436792c2723e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D PREFABS/Amplifier_mini2_sp.prefab using Guid(8feb0679a9455a644843436792c2723e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73ccd3e85eee4a11707c7e3f701da7b8') in 0.4526242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.228769 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Instruments/Unwalk Tis.prefab
+  artifactKey: Guid(df9c058ab8967724c84a758d1fddf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Instruments/Unwalk Tis.prefab using Guid(df9c058ab8967724c84a758d1fddf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '806225cf915567a9fb0d1ba71801a0e5') in 0.0255941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.348343 seconds.
+  path: Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab
+  artifactKey: Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/MAX/EDITED PREFABS/Walkable Instruments/lamp1_sp.prefab using Guid(d653b2ffa95570140abe878691b353ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de92afdcbdd1ad1029a594a7ba1fcb27') in 0.02718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 2066.722949 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat
+  artifactKey: Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Tall_thing 1.mat using Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '484c0f22cdce7a4339903fe3325569fc') in 0.0499722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.150153 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Mic2.mat
+  artifactKey: Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Mic2.mat using Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '137a473769f0c171e299982488750468') in 0.0278181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.687274 seconds.
+  path: Assets/Plugins/FMOD/images/NotFound.png
+  artifactKey: Guid(1138ab068176f29499337d7a73dfecd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/images/NotFound.png using Guid(1138ab068176f29499337d7a73dfecd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e94d9ec15149a5f40a4de7951e6281b7') in 0.0221349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.350936 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Mic2.mat
+  artifactKey: Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Mic2.mat using Guid(ec746409e91b6784fbbd1cb7466c1771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20ae83e39858712ba8e4ef623f8282ce') in 0.0240897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.820009 seconds.
+  path: Assets/Art/Textures/MATERIALS/PROPS/Lamp.mat
+  artifactKey: Guid(0bcb33b9836881440851d5f97fbcae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/MATERIALS/PROPS/Lamp.mat using Guid(0bcb33b9836881440851d5f97fbcae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1530e0bef854c90fbb8c1295de00759d') in 0.0275503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.147823 seconds.
+  path: Assets/Scenes/Max Level Layout/Lightmap-0_comp_dir.png
+  artifactKey: Guid(2508f8f3aee844a4190727071566ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/Lightmap-0_comp_dir.png using Guid(2508f8f3aee844a4190727071566ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac69094dd21e350c520b9a2cfcc62cbd') in 0.0206853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Max Level Layout/Lightmap-1_comp_dir.png
+  artifactKey: Guid(52e5035a8da2a81429c93a47b9bbf372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/Lightmap-1_comp_dir.png using Guid(52e5035a8da2a81429c93a47b9bbf372) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04e8e3eb5c1ccc07e6091b7bc1efbeb7') in 0.0216457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Max Level Layout/Lightmap-1_comp_shadowmask.png
+  artifactKey: Guid(b03d67ab023b08a44a0731273ea48aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Max Level Layout/Lightmap-1_comp_shadowmask.png using Guid(b03d67ab023b08a44a0731273ea48aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '692e36a27123e90da8602698a6544d30') in 0.0220295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
