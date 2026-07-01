@@ -33,7 +33,6 @@ public class PlayerJump : MonoBehaviour
             groundLayer
         );
 
-        animator.SetBool("IsGrounded", isGrounded);
 
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
@@ -43,7 +42,15 @@ public class PlayerJump : MonoBehaviour
 
     public void StartJump()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(jumpEvent);
+        if(jumpsRemaining==2)
+        {
+            animator.SetTrigger("IsJumping");
+        }
+        if(jumpsRemaining==1)
+        {
+            animator.SetTrigger("IsDoubleJumping");
+        }
+        RuntimeManager.PlayOneShot(jumpEvent);
         if (jumpsRemaining <= 0)
             return;
 
