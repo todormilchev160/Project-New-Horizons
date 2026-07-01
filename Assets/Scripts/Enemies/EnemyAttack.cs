@@ -26,7 +26,7 @@ public class EnemyAttack : MonoBehaviour
  
     public void Shoot()
     {
-         TurnTowardsPlayer();
+        TurnTowardsPlayer();
         RuntimeManager.PlayOneShotAttached(fireEvent,gameObject);
         Vector3 enemyOffset = firePoint.position - circleCenter.position;
         enemyOffset.y = 0f;
@@ -73,10 +73,6 @@ projectileScript.Initialize(
     {
         Vector3 direction=player.position-transform.position;
         direction.y=0f;
-        if (direction.magnitude > 0)
-        {
-                    transform.rotation=Quaternion.LookRotation(direction);
-
-        }
+        transform.rotation=Quaternion.LookRotation(direction);
     }
 }

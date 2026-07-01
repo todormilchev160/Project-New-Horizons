@@ -36,6 +36,7 @@ public class PlayerJump : MonoBehaviour
 
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
+            animator.SetBool("IsGrounded",true);
             jumpsRemaining = maxJumps;
         }
     }
@@ -44,6 +45,7 @@ public class PlayerJump : MonoBehaviour
     {
         if(jumpsRemaining==2)
         {
+            
             animator.SetTrigger("IsJumping");
         }
         if(jumpsRemaining==1)
@@ -61,6 +63,7 @@ public class PlayerJump : MonoBehaviour
         );
 
         jumpsRemaining--;
+        animator.SetBool("IsGrounded",false);
         isGrounded = false;
     }
 
