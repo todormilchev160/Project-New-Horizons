@@ -1,23 +1,21 @@
 using System.Collections;
+using FMODUnity;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]private float enemyhealth=30;
     [SerializeField]private GameObject notePrefab;
+    [SerializeField]private EventReference damageEvent;
+    [SerializeField]private EventReference dieEvent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(enemyhealth);
+    
     }
     public void TakeDamage(float damage)
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached(dieEvent,gameObject);
         enemyhealth-=damage;
         StartCoroutine(DamageFeedback());
         if(enemyhealth<=0)
@@ -33,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
     }
     public void Die()
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached(damageEvent,gameObject);
         Instantiate(notePrefab,transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

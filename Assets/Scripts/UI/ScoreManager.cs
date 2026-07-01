@@ -19,7 +19,18 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]private Image guitarBar;
     [SerializeField]private Image productionBar;
     [SerializeField]private Image keyboardBar;
-    [SerializeField]private float pickupsToUnlockSoundtrack;
+    [SerializeField]private float pickupsToUnlockSoundtrack1;
+    [SerializeField]private float pickupsToUnclockSoundtrack2;
+    [SerializeField]private float pickupsToUnlockSoundtrack3;
+    [SerializeField]private float pickupsToUnlockSoundtrack4;
+    [SerializeField]private float pickupsToUnlockSoundtrack5;
+    [SerializeField]private float pickupsToUnlockSoundtrack6;
+    [SerializeField]private float pickupsToUnclockSoundtrack7;
+    [SerializeField]private float pickupsToUnlockSoundtrack8;
+    [SerializeField]private float pickupsToUnlockSoundtrack9;
+    [SerializeField]private float pickupsToUnlockSoundtrack10;
+    [SerializeField]private float pickupsToUnlockSoundtrack11;
+    [SerializeField]private float pickupsToUnlockSoundtrack12;
     [SerializeField]public EventReference soundtrackEvent;
     private EventInstance soundtrack;
     void Awake()
@@ -41,19 +52,19 @@ public class ScoreManager : MonoBehaviour
     {
         drumscore += amount;
         UpdateDrumScore();
-        if(drumscore==pickupsToUnlockSoundtrack)
+        if(drumscore==pickupsToUnlockSoundtrack1)
         {
             soundtrack.setParameterByName("Timing",1);
         }
-        if(drumscore==pickupsToUnlockSoundtrack*2)
+        if(drumscore==pickupsToUnlockSoundtrack1+pickupsToUnclockSoundtrack2)
         {
             soundtrack.setParameterByName("Timing",2);
         }
-        if(drumscore==pickupsToUnlockSoundtrack*3)
+        if(drumscore==pickupsToUnclockSoundtrack2+pickupsToUnlockSoundtrack3)
         {
             soundtrack.setParameterByName("Timing",3);
         }
-        if(drumscore==pickupsToUnlockSoundtrack*4)
+        if(drumscore==pickupsToUnlockSoundtrack3+pickupsToUnlockSoundtrack4)
         {
             soundtrack.setParameterByName("Timing",4);
         }
@@ -63,19 +74,19 @@ public class ScoreManager : MonoBehaviour
     {
         guitarscore+=amount;
         UpdateGuitarScore();
-        if(guitarscore==pickupsToUnlockSoundtrack)
+        if(guitarscore==pickupsToUnlockSoundtrack4+pickupsToUnlockSoundtrack5)
         {
             soundtrack.setParameterByName("Timing",5);
         }
-        if(guitarscore==pickupsToUnlockSoundtrack*2)
+        if(guitarscore==pickupsToUnlockSoundtrack5+pickupsToUnlockSoundtrack6)
         {
             soundtrack.setParameterByName("Timing",6);
         }
-        if(guitarscore==pickupsToUnlockSoundtrack*3)
+        if(guitarscore==pickupsToUnlockSoundtrack6+pickupsToUnclockSoundtrack7)
         {
             soundtrack.setParameterByName("Timing",7);
         }
-        if(guitarscore==pickupsToUnlockSoundtrack*4)
+        if(guitarscore==pickupsToUnclockSoundtrack7+pickupsToUnlockSoundtrack8)
         {
             soundtrack.setParameterByName("Timing",8);
         }
@@ -84,43 +95,27 @@ public class ScoreManager : MonoBehaviour
     {
         keyboardscore += amount;
         UpdateKeyboardScore();
-        if(keyboardscore==pickupsToUnlockSoundtrack)
+        if(keyboardscore==pickupsToUnlockSoundtrack8+pickupsToUnlockSoundtrack9)
         {
             soundtrack.setParameterByName("Timing",9);
         }
-        if(keyboardscore==pickupsToUnlockSoundtrack*2)
+        if(keyboardscore==pickupsToUnlockSoundtrack9+pickupsToUnlockSoundtrack10)
         {
             soundtrack.setParameterByName("Timing",10);
         }
-        if(keyboardscore==pickupsToUnlockSoundtrack*3)
+        if(keyboardscore==pickupsToUnlockSoundtrack10+pickupsToUnlockSoundtrack11)
         {
             soundtrack.setParameterByName("Timing",11);
         }
-        if(keyboardscore==pickupsToUnlockSoundtrack*4)
+        if(keyboardscore==pickupsToUnlockSoundtrack11+pickupsToUnlockSoundtrack12)
         {
             soundtrack.setParameterByName("Timing",12);
         }
     }
     public void AddProductionScore(int amount)
     {
-        productionscore+=amount;
-        UpdateProductionScore();
-        if(productionscore==pickupsToUnlockSoundtrack)
-        {
-            soundtrack.setParameterByName("Timing",13);
-        }
-        if(productionscore==pickupsToUnlockSoundtrack*2)
-        {
-            soundtrack.setParameterByName("Timing",14);
-        }
-        if(productionscore==pickupsToUnlockSoundtrack*3)
-        {
-            soundtrack.setParameterByName("Timing",15);
-        }
-        if(productionscore==pickupsToUnlockSoundtrack*4)
-        {
-            soundtrack.setParameterByName("Timing",16);
-        }
+         UpdateProductionScore();
+         productionscore+=amount;
 
     }
     public void UpdateDrumScore()

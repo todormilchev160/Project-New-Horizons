@@ -5057,6 +5057,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.548
@@ -5100,13 +5108,52 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1938629277}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1 &235154657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4351784483691418979, guid: 9aacc93091fc74f4ebcac5a33313b511, type: 3}
   m_PrefabInstance: {fileID: 1254988943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &236454874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 1624378855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &236454884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236454874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &240365591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5591,6 +5638,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58346acd53cb08c40a30f7e75ee86031, type: 3}
+--- !u!1 &291335791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 1070662792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &297795040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5870882418810855241, guid: 6da07487906f25f4988826575e7e0d54, type: 3}
@@ -6126,7 +6178,18 @@ MonoBehaviour:
   guitarBar: {fileID: 1966407143}
   productionBar: {fileID: 2151673341575939465}
   keyboardBar: {fileID: 7181178387154284328}
-  pickupsToUnlockSoundtrack: 0
+  pickupsToUnlockSoundtrack1: 0
+  pickupsToUnclockSoundtrack2: 0
+  pickupsToUnlockSoundtrack3: 0
+  pickupsToUnlockSoundtrack4: 0
+  pickupsToUnlockSoundtrack5: 0
+  pickupsToUnlockSoundtrack6: 0
+  pickupsToUnclockSoundtrack7: 0
+  pickupsToUnlockSoundtrack8: 0
+  pickupsToUnlockSoundtrack9: 0
+  pickupsToUnlockSoundtrack10: 0
+  pickupsToUnlockSoundtrack11: 0
+  pickupsToUnlockSoundtrack12: 0
   soundtrackEvent:
     Guid:
       Data1: 0
@@ -7549,6 +7612,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6256315733875274330, guid: f40db63084eda5d44bfd3c3009064642, type: 3}
   m_PrefabInstance: {fileID: 3912245546473699491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &443307409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 731933784}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &443939856
 GameObject:
@@ -9531,6 +9599,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1753538324185345734, guid: d225d847ce22e7c4790091e9fb23cf79, type: 3}
   m_PrefabInstance: {fileID: 595747809}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &596008507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 1401814454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &608121683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9616,6 +9689,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
   m_PrefabInstance: {fileID: 731933784}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &630222637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443307409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &634605616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10307,6 +10411,165 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1927950984338677813, guid: f1fa00f8e3552d84fb27018c2c5e2c86, type: 3}
   m_PrefabInstance: {fileID: 7875370861403144086}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &714050503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714050504}
+  - component: {fileID: 714050508}
+  - component: {fileID: 714050507}
+  - component: {fileID: 714050506}
+  - component: {fileID: 714050505}
+  m_Layer: 0
+  m_Name: Main Camera (1)
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &714050504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714050503}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7736256318697754094}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &714050505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714050503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb3c49d8820724d98fe70e9da1456d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
+  distanceFromPlayer: 2
+  heightOffset: 0.08
+  followSpeed: 5
+  rotationSpeed: 8
+  lookAheadDistance: 0.6
+  lookAheadSmoothSpeed: 3
+  movementThreshold: 0.02
+--- !u!114 &714050506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714050503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!81 &714050507
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714050503}
+  m_Enabled: 1
+--- !u!20 &714050508
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714050503}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &716075328
 GameObject:
   m_ObjectHideFlags: 0
@@ -10488,6 +10751,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.0597
@@ -10531,7 +10802,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 630222637}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1 &733838061
 GameObject:
@@ -11274,6 +11548,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
   m_PrefabInstance: {fileID: 1070662792}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &849712671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291335791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &850701292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14020,6 +14325,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09682748
@@ -14063,7 +14376,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 849712671}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1001 &1073784318
 PrefabInstance:
@@ -18289,6 +18605,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
   m_PrefabInstance: {fileID: 1401814454}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1228007667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596008507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1228035167
 GameObject:
   m_ObjectHideFlags: 0
@@ -20109,6 +20456,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.451
@@ -20152,7 +20507,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1228007667}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1 &1406460756
 GameObject:
@@ -27041,6 +27399,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.31181148
@@ -27084,7 +27450,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 236454884}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1001 &1626239654
 PrefabInstance:
@@ -28236,6 +28605,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d653b2ffa95570140abe878691b353ee, type: 3}
+--- !u!1 &1775377052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 1917062022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775377062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775377052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1778126986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30186,6 +30591,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6695636428636476105}
+    - target: {fileID: 7341229851818907802, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      propertyPath: circleCenter
+      value: 
+      objectReference: {fileID: 8495074296267177593}
     - target: {fileID: 9049200384300495128, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7223
@@ -30229,7 +30642,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1775377062}
   m_SourcePrefab: {fileID: 100100000, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
 --- !u!1001 &1932574886
 PrefabInstance:
@@ -30447,6 +30863,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1753538324185345734, guid: d225d847ce22e7c4790091e9fb23cf79, type: 3}
   m_PrefabInstance: {fileID: 1937200406}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1938629267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180613818465973843, guid: 90491b66b1098c3489d9944990d809bc, type: 3}
+  m_PrefabInstance: {fileID: 214561234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1938629277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938629267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1945086021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32924,6 +33376,7 @@ GameObject:
   - component: {fileID: 7341229851989673869}
   - component: {fileID: 2655709603923144015}
   - component: {fileID: 2725564860419774963}
+  - component: {fileID: 9049200385212902928}
   m_Layer: 0
   m_Name: Enemy New
   m_TagString: Untagged
@@ -32949,6 +33402,7 @@ GameObject:
   - component: {fileID: 7341229852169297356}
   - component: {fileID: 2655709603768268558}
   - component: {fileID: 2725564860640674738}
+  - component: {fileID: 9049200384889631823}
   m_Layer: 0
   m_Name: Enemy New
   m_TagString: Untagged
@@ -32974,6 +33428,7 @@ GameObject:
   - component: {fileID: 7341229852669715503}
   - component: {fileID: 2655709602454638317}
   - component: {fileID: 2725564860008118865}
+  - component: {fileID: 9049200385607650734}
   m_Layer: 0
   m_Name: Enemy New
   m_TagString: Untagged
@@ -32999,6 +33454,7 @@ GameObject:
   - component: {fileID: 7341229852811551128}
   - component: {fileID: 2655709602060651354}
   - component: {fileID: 2725564860134752230}
+  - component: {fileID: 9049200385464764443}
   m_Layer: 0
   m_Name: Enemy New
   m_TagString: Untagged
@@ -33024,6 +33480,7 @@ GameObject:
   - component: {fileID: 7341229853062081309}
   - component: {fileID: 2655709602850144735}
   - component: {fileID: 2725564859345220963}
+  - component: {fileID: 9049200386285879968}
   m_Layer: 0
   m_Name: Enemy New
   m_TagString: Untagged
@@ -33049,6 +33506,7 @@ GameObject:
   - component: {fileID: 7341229853286943584}
   - component: {fileID: 2655709602667127202}
   - component: {fileID: 2725564859526960414}
+  - component: {fileID: 9049200385919460067}
   m_Layer: 0
   m_Name: Enemy New (1)
   m_TagString: Untagged
@@ -34502,6 +34960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9049067525398867018}
+  - component: {fileID: 9049067525398867019}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -34566,6 +35025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9049067523683913758}
+  - component: {fileID: 9049067523683913759}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -34607,6 +35067,7 @@ GameObject:
   - component: {fileID: 3761913923657001388}
   - component: {fileID: 2421466239875208466}
   - component: {fileID: 9053160274657856891}
+  - component: {fileID: 9053160274657856892}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -43163,6 +43624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2725564859526960414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43177,6 +43640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2725564860008118865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43191,6 +43656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2725564860134752230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43205,6 +43672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2725564860419774963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43219,6 +43688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2725564860640674738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43233,6 +43704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyhealth: 30
   notePrefab: {fileID: 1724575498692543086, guid: 9c49e0cf7eb107140ac51a895808ce82, type: 3}
+  damageEventPath: 
+  dieEventPath: 
 --- !u!114 &2728323310290345896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49107,6 +49580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 3
   maxJumps: 2
+  jumpsoundPath: 
   groundCheck: {fileID: 825958578553426861}
   groundCheckRadius: 0.02
   groundLayer:
@@ -52345,7 +52819,8 @@ MonoBehaviour:
   attackVisualPrefab: {fileID: 0}
   visualForwardOffset: 1.5
   visualUpOffset: 0.5
-  attacksoundpath: 
+  attacksoundpath: event:/SketchPunk_Metronome
+  animator: {fileID: 2846032708456578326}
 --- !u!33 &5957234061899871736
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -53133,10 +53608,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 9053160274657856892}
+        m_TargetAssemblyTypeName: CameraSwitch, Assembly-CSharp
+        m_MethodName: SwicthCamera
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -55841,11 +56316,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067524039756383}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!114 &7341229852169297356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55860,11 +56336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067523683913758}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!114 &7341229852669715503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55879,11 +56356,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067525775583741}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!114 &7341229852811551128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55898,11 +56376,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067525398867018}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!114 &7341229853062081309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55917,11 +56396,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067525114783439}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!114 &7341229853286943584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55936,11 +56416,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5269736139264041388, guid: 1546bf3821389944a96a146c0a5d7350, type: 3}
   firePoint: {fileID: 9049067524780852914}
-  player: {fileID: 0}
-  circleCenter: {fileID: 0}
+  player: {fileID: 6695636428636476105}
+  circleCenter: {fileID: 8495074296267177593}
   projectileSpeed: 2
   projectileDistance: 5
   fireRate: 2
+  fireEventPath: 
 --- !u!135 &7343188497884979464
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56052,7 +56533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7425902655582457519
 Transform:
   m_ObjectHideFlags: 0
@@ -57272,6 +57753,7 @@ Transform:
   - {fileID: 2739304305077587444}
   - {fileID: 1743065816}
   - {fileID: 2021888215755820826}
+  - {fileID: 714050504}
   - {fileID: 1801657826}
   - {fileID: 8881823547676719008}
   - {fileID: 863642335}
@@ -61515,6 +61997,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9049200384889631822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049067523683913759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901481549557305373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1860043934
+      Data2: 1086882369
+      Data3: 599158694
+      Data4: 425819373
+    Path: event:/SketchPunk_Drum1
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049067524039756383
 Transform:
   m_ObjectHideFlags: 0
@@ -61569,12 +62082,43 @@ Transform:
   m_GameObject: {fileID: 901481547909475401}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7099998, y: 0, z: 0}
+  m_LocalPosition: {x: 0.39, y: 0, z: -1.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9049200385464764442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049067525398867019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901481547909475401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049067525775583741
 Transform:
   m_ObjectHideFlags: 0
@@ -61607,6 +62151,37 @@ Transform:
   - {fileID: 4926016595053169854}
   m_Father: {fileID: 1459082447329727200}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200384889631823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613818917024517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049200385212902927
 Transform:
   m_ObjectHideFlags: 0
@@ -61626,6 +62201,37 @@ Transform:
   - {fileID: 8986338980957126469}
   m_Father: {fileID: 851707281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200385212902928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613818568583492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049200385464764442
 Transform:
   m_ObjectHideFlags: 0
@@ -61635,7 +62241,7 @@ Transform:
   m_GameObject: {fileID: 180613819356893009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0812, y: -0.052700043, z: 0.2389}
+  m_LocalPosition: {x: -0.0812, y: 0.026, z: 0.2389}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -61643,6 +62249,37 @@ Transform:
   - {fileID: 4926016593538511082}
   m_Father: {fileID: 1459082446769870057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200385464764443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613819356893009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049200385607650733
 Transform:
   m_ObjectHideFlags: 0
@@ -61660,6 +62297,37 @@ Transform:
   - {fileID: 4926016593110414685}
   m_Father: {fileID: 1459082446755973160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200385607650734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613819247561446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049200385919460066
 Transform:
   m_ObjectHideFlags: 0
@@ -61679,6 +62347,37 @@ Transform:
   - {fileID: 1829239617}
   m_Father: {fileID: 851707281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200385919460067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613819967563177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9049200386285879967
 Transform:
   m_ObjectHideFlags: 0
@@ -61698,6 +62397,37 @@ Transform:
   - {fileID: 837371626}
   m_Father: {fileID: 1459082446827108928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9049200386285879968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180613819643069908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -997389481
+      Data2: 1244452497
+      Data3: -583417174
+      Data4: -1184186421
+    Path: event:/SketchPunk_Metronome
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &9053160274657856891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61719,6 +62449,19 @@ MonoBehaviour:
   lookAheadDistance: 0.6
   lookAheadSmoothSpeed: 3
   movementThreshold: 0.02
+--- !u!114 &9053160274657856892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922890567959391671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62d39b39e56dcd4f8ec061a6052a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondCamera: {fileID: 714050503}
 --- !u!114 &9063579878748601767
 MonoBehaviour:
   m_ObjectHideFlags: 0

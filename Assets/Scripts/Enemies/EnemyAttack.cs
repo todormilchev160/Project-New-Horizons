@@ -1,3 +1,5 @@
+using System.Collections;
+using FMODUnity;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -10,8 +12,9 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private float projectileSpeed = 10f;
     [SerializeField] private float projectileDistance = 15f;
     [SerializeField]private float fireRate=2;
+    [SerializeField] private EventReference fireEvent;
     private Rigidbody rb;
-
+     
     void Start()
     {
         InvokeRepeating(nameof(Shoot), 1f, fireRate);
@@ -21,6 +24,7 @@ public class EnemyAttack : MonoBehaviour
     }  
     public void Shoot()
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached(fireEvent,gameObject);
         Vector3 enemyOffset = firePoint.position - circleCenter.position;
         enemyOffset.y = 0f;
 
