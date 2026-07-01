@@ -14,6 +14,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField]private float fireRate=2;
     [SerializeField] private EventReference fireEvent;
     private Rigidbody rb;
+
      
     void Start()
     {
@@ -21,10 +22,12 @@ public class EnemyAttack : MonoBehaviour
         rb=GetComponent<Rigidbody>();
         rb.constraints=RigidbodyConstraints.FreezePositionX;
         rb.constraints=RigidbodyConstraints.FreezePositionZ;
-    }  
+    } 
+ 
     public void Shoot()
     {
-        FMODUnity.RuntimeManager.PlayOneShotAttached(fireEvent,gameObject);
+         TurnTowardsPlayer();
+        RuntimeManager.PlayOneShotAttached(fireEvent,gameObject);
         Vector3 enemyOffset = firePoint.position - circleCenter.position;
         enemyOffset.y = 0f;
 
@@ -65,5 +68,15 @@ projectileScript.Initialize(
     projectileDistance,
     player.position.y
 );
+    }
+    private void TurnTowardsPlayer()
+    {
+        Vector3 direction=player.position-transform.position;
+        direction.y=0f;
+        if (direction.magnitude > 0)
+        {
+                    transform.rotation=Quaternion.LookRotation(direction);
+
+        }
     }
 }

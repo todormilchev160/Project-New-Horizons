@@ -8,10 +8,12 @@ public class PlayerHealth : MonoBehaviour
     public float health=100;
     [SerializeField]private string deathScene;
     [SerializeField]private float scoreLostOnDeath;
+    private Animator animator;
      private float falltime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator=GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,12 +33,13 @@ public class PlayerHealth : MonoBehaviour
     }
     void Die()
     {
+       animator.SetTrigger("Die");
        ScoreManager.instance.LoseScore(scoreLostOnDeath);
         SceneManager.LoadScene(deathScene);
     }
     IEnumerator DamageFeedback()
     {
-        GetComponent<Renderer>().material.color=Color.white;
+        GetComponent<Renderer>().material.color=Color.red;
         yield return new WaitForSeconds(0.2f);
         GetComponent<Renderer>().material.color=Color.gray;
     }

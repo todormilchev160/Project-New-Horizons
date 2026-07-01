@@ -19,12 +19,7 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadScene(string sceneName)
     {
-      StartCoroutine(SceneCoroutine(sceneName));
-    }
-    public IEnumerator SceneCoroutine(string sceneName)
-    {
-        animator.SetTrigger("EndScene");
-        yield return new WaitForSeconds(transitiontime);
-        yield return SceneManager.LoadSceneAsync(sceneName);
+         animator.SetTrigger("EndScene");
+        SceneManager.LoadScene(sceneName); 
     }
 }

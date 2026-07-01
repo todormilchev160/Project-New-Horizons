@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]private GameObject notePrefab;
     [SerializeField]private EventReference damageEvent;
     [SerializeField]private EventReference dieEvent;
+    private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShotAttached(dieEvent,gameObject);
         enemyhealth-=damage;
-        StartCoroutine(DamageFeedback());
+        animator.SetTrigger("TakeDamage");
         if(enemyhealth<=0)
         {
             Die();
@@ -31,7 +32,8 @@ public class EnemyHealth : MonoBehaviour
     }
     public void Die()
     {
-        FMODUnity.RuntimeManager.PlayOneShotAttached(damageEvent,gameObject);
+        animator.SetTrigger("Die");
+        RuntimeManager.PlayOneShotAttached(damageEvent,gameObject);
         Instantiate(notePrefab,transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
