@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
@@ -9,12 +10,13 @@ public class PlayerJump : MonoBehaviour
 
     [SerializeField] private float jumpForce = 8f;
     [SerializeField] private int maxJumps = 2;
-
+    [SerializeField]private string jumpsoundPath;
     private int jumpsRemaining;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.02f;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField]private EventReference jumpEvent;
 
     void Start()
     {
@@ -31,7 +33,6 @@ public class PlayerJump : MonoBehaviour
             groundLayer
         );
 
-        animator.SetBool("IsGrounded", isGrounded);
 
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
@@ -41,6 +42,15 @@ public class PlayerJump : MonoBehaviour
 
     public void StartJump()
     {
+        if(jumpsRemaining==2)
+        {
+            animator.SetTrigger("IsJumping");
+        }
+        if(jumpsRemaining==1)
+        {
+            animator.SetTrigger("IsDoubleJumping");
+        }
+        RuntimeManager.PlayOneShot(jumpEvent);
         if (jumpsRemaining <= 0)
             return;
 

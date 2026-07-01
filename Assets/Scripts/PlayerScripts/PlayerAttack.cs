@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using FMODUnity;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Settings")]
@@ -14,7 +14,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject attackVisualPrefab;
     [SerializeField] private float visualForwardOffset = 1.5f;
     [SerializeField] private float visualUpOffset = 0.5f;
-    [SerializeField]private string attacksoundpath;
+    [SerializeField]private EventReference attackEvent;
+    [SerializeField]private Animator animator;
 
     private bool attacking;
 
@@ -25,7 +26,8 @@ public class PlayerAttack : MonoBehaviour
 
     private IEnumerator Attack()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(attacksoundpath);
+        animator.SetTrigger("Attack");
+        FMODUnity.RuntimeManager.PlayOneShot(attackEvent);
         if (attacking)
             yield break;
 

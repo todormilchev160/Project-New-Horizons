@@ -54,7 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
         normalMoveSpeed = moveSpeed;
 
-        RecalculateCirclePosition();
+        Vector3 offset = rb.position - circleCenter.position;
+offset.y = 0f;
+radius = offset.magnitude;
+
+RecalculateCirclePosition();
         RotateTowardCenter();
     }
 
@@ -98,9 +102,9 @@ public class PlayerMovement : MonoBehaviour
         );
 
         HandleFootsteps();
-
         RecalculateCirclePosition();
         RotateTowardCenter();
+        LockToCircle();
     }
 
     private void HandleFootsteps()
@@ -241,14 +245,26 @@ public class PlayerMovement : MonoBehaviour
         dashCoroutine = null;
     }
 
-    private void RecalculateCirclePosition()
-    {
-        Vector3 offset = rb.position - circleCenter.position;
-        offset.y = 0f;
+private void RecalculateCirclePosition()
+{
+    Vector3 offset = rb.position - circleCenter.position;
+    offset.y = 0f;
 
-        radius = offset.magnitude;
-        angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
-    }
+    angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
+}
+
+private void LockToCircle()
+{
+    float radians = angle * Mathf.Deg2Rad;
+
+    Vector3 lockedPosition = circleCenter.position + new Vector3(
+        Mathf.Cos(radians) * radius,
+        rb.position.y - circleCenter.position.y,
+        Mathf.Sin(radians) * radius
+    );
+
+    rb.position = lockedPosition;
+}
 
     private void RotateTowardCenter()
     {
