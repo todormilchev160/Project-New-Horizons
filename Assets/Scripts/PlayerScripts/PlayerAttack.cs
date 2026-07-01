@@ -14,7 +14,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject attackVisualPrefab;
     [SerializeField] private float visualForwardOffset = 1.5f;
     [SerializeField] private float visualUpOffset = 0.5f;
-    [SerializeField]private string attacksoundpath;
+    [SerializeField] private string attacksoundpath;
+    [SerializeField] private Animator animator;
 
     private bool attacking;
 
@@ -22,9 +23,9 @@ public class PlayerAttack : MonoBehaviour
     {
         StartCoroutine(Attack());
     }
-
     private IEnumerator Attack()
     {
+        animator.SetTrigger("Attack");
         FMODUnity.RuntimeManager.PlayOneShot(attacksoundpath);
         if (attacking)
             yield break;
@@ -79,7 +80,6 @@ public class PlayerAttack : MonoBehaviour
 
         attacking = false;
     }
-
     private void DrawDebugCone(Vector3 attackDirection)
     {
         Vector3 origin = transform.position;

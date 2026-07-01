@@ -25,7 +25,6 @@ public class PlayerFallDeath : MonoBehaviour
     void Die()
     { 
         ScoreManager.instance.LoseScore(scoreLostOnDeath);
-        animator.SetTrigger("Endscene");
-        SceneManager.LoadScene(deathScene);
+        SceneLoader.instance.LoadScene(deathScene);
     }
 }

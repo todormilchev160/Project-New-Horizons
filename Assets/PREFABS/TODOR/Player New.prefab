@@ -70,7 +70,6 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4748387420754724720}
   - {fileID: 4452428683557730284}
   - {fileID: 825958577394265513}
   m_Father: {fileID: 537205558128991393}
@@ -211,8 +210,18 @@ MonoBehaviour:
   rotationOffsetY: -90
   dashSpeed: 2
   dashDuration: 0.2
+  dashMomentumTime: 0.12
   doubleClickTime: 0.3
   dashCooldown: 0.5
+  FootstepEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  WalkStepRate: 0.5
+  DashStepRate: 0.32
 --- !u!114 &3059115463746506049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  deathScene: 
+  scoreLostOnDeath: 0
 --- !u!54 &7796135355563691099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -272,8 +283,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  attackvisual: {fileID: 7263599484826198910}
-  attackvisualleft: {fileID: 6415930224160813820}
+  attackVisualPrefab: {fileID: 0}
+  visualForwardOffset: 1.5
+  visualUpOffset: 0.5
+  attacksoundpath: 
 --- !u!114 &4952220300081660103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f13cb68e51c03846b3a54cd98c6f53d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathScene: 
+  scoreLostOnDeath: 1
 --- !u!1 &5785519603821084011
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +332,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6695636427512900813}
+  - {fileID: 4748387420754724720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6717106869396431091
@@ -479,11 +495,11 @@ Transform:
   m_GameObject: {fileID: 7263599484826198910}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.03, y: 0.19858804, z: 2.51}
-  m_LocalScale: {x: 1, y: 1.7625, z: 1}
+  m_LocalPosition: {x: -4.25, y: 0.86985874, z: 0.98399997}
+  m_LocalScale: {x: 0.1, y: 0.17625001, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6695636427512900813}
+  m_Father: {fileID: 537205558128991393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &8191881741280803090
 MeshFilter:

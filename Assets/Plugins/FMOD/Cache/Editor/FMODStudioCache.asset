@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3628
+--- !u!114 &-9162270924657311805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_35
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_35
+  Guid:
+    Data1: 850663305
+    Data2: 1122204914
+    Data3: -107012986
+    Data4: 1768477228
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-9129624850480397594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 793
+--- !u!114 &-9088421966026415798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Dying_falling
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Dying_falling
+  Guid:
+    Data1: -1815840821
+    Data2: 1338740928
+    Data3: -1044408167
+    Data4: -636737108
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1248
 --- !u!114 &-9053178363811382428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +236,168 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3562
   Exists: 1
+--- !u!114 &-8765689323316426469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_54
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_54
+  Guid:
+    Data1: -1266447862
+    Data2: 1093714500
+    Data3: 524383667
+    Data4: 407620678
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-8589069401235220351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_53
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_53
+  Guid:
+    Data1: 634970084
+    Data2: 1103517800
+    Data3: 131868844
+    Data4: 804358773
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-8582884018222538267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Kick_drum_bounce
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Kick_drum_bounce
+  Guid:
+    Data1: -409521566
+    Data2: 1100462599
+    Data3: 1734239152
+    Data4: -2087188213
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-8442114992972659455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_52
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_52
+  Guid:
+    Data1: -256680586
+    Data2: 1273279530
+    Data3: -795443071
+    Data4: -1817096179
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-8397000988963090032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_51
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_51
+  Guid:
+    Data1: -726363426
+    Data2: 1075159636
+    Data3: 1765552823
+    Data4: -748341143
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-8395008054426909703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_59
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_59
+  Guid:
+    Data1: 1794244094
+    Data2: 1115981106
+    Data3: -2121386081
+    Data4: -986251593
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-8367330707445069481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +452,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5225
+--- !u!114 &-8228844899881802372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_37
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_37
+  Guid:
+    Data1: 1193991826
+    Data2: 1104458380
+    Data3: 1469707960
+    Data4: -254222145
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-8185505479098387852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +506,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3628
+--- !u!114 &-8053136296006186369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_48
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_48
+  Guid:
+    Data1: -1493820324
+    Data2: 1193992109
+    Data3: -1135823716
+    Data4: -960098611
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-8042979416951897558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_10
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_10
+  Guid:
+    Data1: -144710587
+    Data2: 1165891967
+    Data3: -1429556593
+    Data4: -749342754
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-7890188430593655151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +587,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7257
+--- !u!114 &-7855708903643125370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_12
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_12
+  Guid:
+    Data1: 1983006039
+    Data2: 1328318060
+    Data3: -1007714641
+    Data4: 1846195682
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-7780845754619768810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +634,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 5862560
   Exists: 1
+--- !u!114 &-7642641255427042790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_30
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_30
+  Guid:
+    Data1: -75824080
+    Data2: 1188126121
+    Data3: 236529804
+    Data4: 945507537
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-7630328421102958976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_7
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_7
+  Guid:
+    Data1: 1884341863
+    Data2: 1171685743
+    Data3: -1263834699
+    Data4: 929517274
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-7629165488455791667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +847,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4989
+--- !u!114 &-6789994676602206008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_58
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_58
+  Guid:
+    Data1: -595236650
+    Data2: 1318559332
+    Data3: -39491949
+    Data4: 1729561035
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-6774946393352769440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_49
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_49
+  Guid:
+    Data1: -138156115
+    Data2: 1290079442
+    Data3: 2037501874
+    Data4: 1826574564
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-6675748264018485970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Cymbal_jump_1_(landing)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Cymbal_jump_1_(landing)
+  Guid:
+    Data1: -1522673278
+    Data2: 1148442329
+    Data3: -995772748
+    Data4: -1027509980
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-6652652620973962469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +975,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14968
+--- !u!114 &-6374974239568893560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Jumping_(jump)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Jumping_(jump)
+  Guid:
+    Data1: 133279646
+    Data2: 1128760644
+    Data3: -1556962410
+    Data4: -935374755
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1080
 --- !u!114 &-6339524211395748181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +1029,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10529
+--- !u!114 &-6325946128642224216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_27
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_27
+  Guid:
+    Data1: 1834002933
+    Data2: 1264993207
+    Data3: 1169195443
+    Data4: 10986518
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &-6292537034808124180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,6 +1083,114 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3207
+--- !u!114 &-6224851980092913255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_21
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_21
+  Guid:
+    Data1: -1114032634
+    Data2: 1265800982
+    Data3: -496024398
+    Data4: 1726628734
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-6113321225076960083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_40
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_40
+  Guid:
+    Data1: 486130535
+    Data2: 1076018209
+    Data3: -936782153
+    Data4: -1649895650
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-6080724050791858551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Bug_buzz
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Bug_buzz
+  Guid:
+    Data1: 507251752
+    Data2: 1212272838
+    Data3: -1514561874
+    Data4: 1219004
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4896
+--- !u!114 &-5948384091229201442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_36
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_36
+  Guid:
+    Data1: -2102786052
+    Data2: 1249828260
+    Data3: 769358724
+    Data4: 334524839
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-5781199138425203826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,6 +1269,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8795
+--- !u!114 &-5678193334587699372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_46
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_46
+  Guid:
+    Data1: 1689281298
+    Data2: 1248456975
+    Data3: 336685217
+    Data4: 1107071895
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-5566906803839716981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,6 +1323,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11363
+--- !u!114 &-5560141075558873015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Drum_1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Drum_1
+  Guid:
+    Data1: -1138031000
+    Data2: 1128175946
+    Data3: 1520409506
+    Data4: 223982058
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 650
 --- !u!114 &-5514302329848988687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +1377,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11363
+--- !u!114 &-5507959189377577425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_11
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_11
+  Guid:
+    Data1: 805457027
+    Data2: 1251848109
+    Data3: 591876514
+    Data4: -267250786
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-5486855604227236169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_57
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_57
+  Guid:
+    Data1: -634468700
+    Data2: 1086895767
+    Data3: -2125721415
+    Data4: 1210533124
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-5385339778448823837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +1458,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3977
+--- !u!114 &-5368553786854537493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_50
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_50
+  Guid:
+    Data1: -614387395
+    Data2: 1329119781
+    Data3: -791789166
+    Data4: 1199132282
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-5278938681034334861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +1512,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4876
+--- !u!114 &-5207806404040538376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_56
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_56
+  Guid:
+    Data1: 1658308640
+    Data2: 1239208579
+    Data3: 1801678232
+    Data4: 940608074
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-5105826589272174480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +1648,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3628
+--- !u!114 &-4926073073511707394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_44
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_44
+  Guid:
+    Data1: 1074418057
+    Data2: 1294024950
+    Data3: 1368763019
+    Data4: -1046653648
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-4925979810271326280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,6 +1729,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14251
+--- !u!114 &-4747858634281280754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_1
+  Guid:
+    Data1: -920460868
+    Data2: 1178812741
+    Data3: 1063404462
+    Data4: -1235130426
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &-4710663592640779029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,6 +1918,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5375
+--- !u!114 &-4380323980887151833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_15
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_15
+  Guid:
+    Data1: 584033005
+    Data2: 1140062918
+    Data3: 1052500122
+    Data4: -749615690
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
+--- !u!114 &-4338947014769099682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Default_jump_(landing)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Default_jump_(landing)
+  Guid:
+    Data1: -1057585170
+    Data2: 1330370129
+    Data3: 1569968008
+    Data4: -1356983811
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 360
 --- !u!114 &-4266718152589385227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +2371,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7257
+--- !u!114 &-3448811395465653201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum2
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum2
+  Guid:
+    Data1: -1059804291
+    Data2: 1246470876
+    Data3: 573402303
+    Data4: -790317373
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3439949808952602647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,6 +2425,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9564
+--- !u!114 &-3148471482475766646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Bug_projectile_travel_sound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Bug_projectile_travel_sound
+  Guid:
+    Data1: 1162232801
+    Data2: 1228584495
+    Data3: 1579617949
+    Data4: -331435142
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1900
 --- !u!114 &-3048180724913411057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +2533,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4082
+--- !u!114 &-2827546599081397075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Drum_3_bounce
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Drum_3_bounce
+  Guid:
+    Data1: 326501791
+    Data2: 1289619031
+    Data3: 1754476691
+    Data4: 1241437898
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2064
+--- !u!114 &-2820398045839612924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_31
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_31
+  Guid:
+    Data1: -1648340988
+    Data2: 1172004726
+    Data3: -1906725478
+    Data4: -1233373877
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-2800981928883208896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1642,6 +2641,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1814
+--- !u!114 &-2682640046739651624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_32
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_32
+  Guid:
+    Data1: -33796632
+    Data2: 1197739054
+    Data3: 626427823
+    Data4: 2109017792
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-2569638243542019819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1723,6 +2749,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4470
+--- !u!114 &-1855535215635613740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_5
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_5
+  Guid:
+    Data1: 714890278
+    Data2: 1244492008
+    Data3: 529266304
+    Data4: -1494820536
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-1818905863178046188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_28
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_28
+  Guid:
+    Data1: -1182567515
+    Data2: 1204704707
+    Data3: -707473743
+    Data4: -526915102
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-1757894803655083928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,6 +2965,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2721
+--- !u!114 &-1334969139336559968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Drum_1_bounce
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Drum_1_bounce
+  Guid:
+    Data1: 1887571548
+    Data2: 1279609415
+    Data3: 213418890
+    Data4: 1042940183
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &-1320041361389456179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Metronome
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Metronome
+  Guid:
+    Data1: -997389481
+    Data2: 1244452497
+    Data3: -583417174
+    Data4: -1184186421
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1313913029584241555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_38
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_38
+  Guid:
+    Data1: -2004758356
+    Data2: 1148461359
+    Data3: 1658223281
+    Data4: -1064838865
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 632
 --- !u!114 &-1084989549536874539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,6 +3124,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-475200558055666426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Attack
+  Guid:
+    Data1: 1577664046
+    Data2: 1207598622
+    Data3: 801512124
+    Data4: -1007094630
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1128
 --- !u!114 &-393883220171233775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,6 +3232,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-252561914028600451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_29
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_29
+  Guid:
+    Data1: -182402673
+    Data2: 1261765154
+    Data3: -733341816
+    Data4: 924101158
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &-201222778379917123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_25
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_25
+  Guid:
+    Data1: -1070627868
+    Data2: 1273179597
+    Data3: -574827353
+    Data4: 29821324
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &-128089982371611712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2111,22 +3353,108 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4906077406147971672}
-  - {fileID: 878581377560553670}
+  - {fileID: 9098694175195665374}
+  - {fileID: 7497736502131266023}
   EditorEvents:
-  - {fileID: -5566906803839716981}
-  - {fileID: 6938771366413269381}
-  - {fileID: -5514302329848988687}
-  - {fileID: -5105826589272174480}
-  - {fileID: -128089982371611712}
-  - {fileID: 6507812440173318962}
+  - {fileID: 1378858579177716888}
+  - {fileID: 2291986074495345378}
+  - {fileID: -1320041361389456179}
+  - {fileID: 303097416068924282}
+  - {fileID: -3448811395465653201}
+  - {fileID: 5632278560834590204}
+  - {fileID: 5930848421855830212}
+  - {fileID: -2820398045839612924}
+  - {fileID: -6224851980092913255}
+  - {fileID: -8765689323316426469}
+  - {fileID: 4638083064980539962}
+  - {fileID: -5678193334587699372}
+  - {fileID: 3411128568380869535}
+  - {fileID: 3731684622893145621}
+  - {fileID: 4774229847178642882}
+  - {fileID: -5207806404040538376}
+  - {fileID: 4867728746724507076}
+  - {fileID: -1855535215635613740}
+  - {fileID: -6080724050791858551}
+  - {fileID: 4120754273000133155}
+  - {fileID: 1117114016502521710}
+  - {fileID: -475200558055666426}
+  - {fileID: 7345740566994465640}
+  - {fileID: -7642641255427042790}
+  - {fileID: 1019532279084277941}
+  - {fileID: 557884600226982800}
+  - {fileID: 872245238503591427}
+  - {fileID: -5368553786854537493}
+  - {fileID: -8042979416951897558}
+  - {fileID: 6573189484695441328}
+  - {fileID: 7232629492462677462}
+  - {fileID: 4806144545647292465}
+  - {fileID: -7855708903643125370}
+  - {fileID: -1334969139336559968}
+  - {fileID: -8053136296006186369}
+  - {fileID: 6858493943153275086}
+  - {fileID: 6346941850385869099}
+  - {fileID: -8582884018222538267}
+  - {fileID: -6113321225076960083}
+  - {fileID: -7630328421102958976}
+  - {fileID: -5560141075558873015}
+  - {fileID: 638440880515738916}
+  - {fileID: 468187506363885855}
+  - {fileID: 7386259029251416669}
+  - {fileID: -8442114992972659455}
+  - {fileID: 1584560583894628410}
+  - {fileID: 4872586223849500777}
+  - {fileID: -6675748264018485970}
+  - {fileID: -5507959189377577425}
+  - {fileID: 3200759186983199909}
+  - {fileID: 8462520731148113350}
+  - {fileID: -9162270924657311805}
+  - {fileID: -4926073073511707394}
+  - {fileID: -252561914028600451}
+  - {fileID: 898521248391287519}
+  - {fileID: 3201212006036576893}
+  - {fileID: -8228844899881802372}
+  - {fileID: -6374974239568893560}
+  - {fileID: -2827546599081397075}
+  - {fileID: 6795060122071721297}
+  - {fileID: -5486855604227236169}
+  - {fileID: -1818905863178046188}
+  - {fileID: 2747727144243840891}
+  - {fileID: 3705896541374717582}
+  - {fileID: -1313913029584241555}
+  - {fileID: -6774946393352769440}
+  - {fileID: 5236199179533010740}
+  - {fileID: 6457037416847667549}
+  - {fileID: -4747858634281280754}
+  - {fileID: 7881078547970336883}
+  - {fileID: 5837694833349682580}
+  - {fileID: -9088421966026415798}
+  - {fileID: 2825772077693682782}
+  - {fileID: -6789994676602206008}
+  - {fileID: 4862221914672109522}
+  - {fileID: 909486942970169924}
+  - {fileID: -8397000988963090032}
+  - {fileID: -3148471482475766646}
+  - {fileID: -201222778379917123}
+  - {fileID: -8589069401235220351}
+  - {fileID: 8983914608428051989}
+  - {fileID: -2682640046739651624}
+  - {fileID: -4380323980887151833}
+  - {fileID: -4338947014769099682}
+  - {fileID: 2876959804925310258}
+  - {fileID: 4405163601008064422}
+  - {fileID: 1143352130489060350}
+  - {fileID: -6325946128642224216}
+  - {fileID: -5948384091229201442}
+  - {fileID: 8978613781856787526}
+  - {fileID: 3071283641749664163}
+  - {fileID: -8395008054426909703}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 878581377560553670}
+  - {fileID: 7497736502131266023}
   StringsBanks:
-  - {fileID: 4906077406147971672}
+  - {fileID: 9098694175195665374}
   cacheVersion: 131860
-  cacheTime: 639180086291284303
+  cacheTime: 639185034930523295
   SerializableEventsDict:
   - key: event:/SketchPunk_Drum3
     index: 0
@@ -2140,6 +3468,178 @@ MonoBehaviour:
     index: 4
   - key: event:/SketchPunk_Drum1
     index: 5
+  - key: event:/SFX_Piano_34
+    index: 6
+  - key: event:/SFX_Piano_31
+    index: 7
+  - key: event:/SFX_Piano_21
+    index: 8
+  - key: event:/SFX_Piano_54
+    index: 9
+  - key: event:/SFX_Piano_41
+    index: 10
+  - key: event:/SFX_Piano_46
+    index: 11
+  - key: event:/SFX_Dying
+    index: 12
+  - key: event:/SFX_Piano_45
+    index: 13
+  - key: event:/SFX_Piano_55
+    index: 14
+  - key: event:/SFX_Piano_56
+    index: 15
+  - key: event:/SFX_Piano_4
+    index: 16
+  - key: event:/SFX_Piano_5
+    index: 17
+  - key: event:/SFX_Bug_buzz
+    index: 18
+  - key: event:/SFX_Piano_19
+    index: 19
+  - key: event:/SFX_Piano_6
+    index: 20
+  - key: event:/SFX_Attack
+    index: 21
+  - key: event:/SFX_Bug_death_sound
+    index: 22
+  - key: event:/SFX_Piano_30
+    index: 23
+  - key: event:/SFX_Piano_22
+    index: 24
+  - key: event:/SFX_Piano_26
+    index: 25
+  - key: event:/SFX_Piano_20
+    index: 26
+  - key: event:/SFX_Piano_50
+    index: 27
+  - key: event:/SFX_Piano_10
+    index: 28
+  - key: event:/SFX_Drum_2
+    index: 29
+  - key: event:/SFX_Bug_attacking
+    index: 30
+  - key: event:/SFX_Snare_drum_bounce
+    index: 31
+  - key: event:/SFX_Piano_12
+    index: 32
+  - key: event:/SFX_Drum_1_bounce
+    index: 33
+  - key: event:/SFX_Piano_48
+    index: 34
+  - key: event:/SFX_Piano_24
+    index: 35
+  - key: event:/SFX_Taking_damage
+    index: 36
+  - key: event:/SFX_Kick_drum_bounce
+    index: 37
+  - key: event:/SFX_Piano_40
+    index: 38
+  - key: event:/SFX_Piano_7
+    index: 39
+  - key: event:/SFX_Drum_1
+    index: 40
+  - key: event:/SFX_Piano_13
+    index: 41
+  - key: event:/SFX_Cymbal_jump 2_(landing)
+    index: 42
+  - key: event:/SFX_Piano_39
+    index: 43
+  - key: event:/SFX_Piano_52
+    index: 44
+  - key: event:/SFX_Piano_23
+    index: 45
+  - key: event:/SFX_Piano_8
+    index: 46
+  - key: event:/SFX_Cymbal_jump_1_(landing)
+    index: 47
+  - key: event:/SFX_Piano_11
+    index: 48
+  - key: event:/SFX_Piano_33
+    index: 49
+  - key: event:/SFX_Piano_16
+    index: 50
+  - key: event:/SFX_Piano_35
+    index: 51
+  - key: event:/SFX_Piano_44
+    index: 52
+  - key: event:/SFX_Piano_29
+    index: 53
+  - key: event:/SFX_Pickup
+    index: 54
+  - key: event:/SFX_Piano_9
+    index: 55
+  - key: event:/SFX_Piano_37
+    index: 56
+  - key: event:/SFX_Jumping_(jump)
+    index: 57
+  - key: event:/SFX_Drum_3_bounce
+    index: 58
+  - key: event:/SFX_Piano_43
+    index: 59
+  - key: event:/SFX_Piano_57
+    index: 60
+  - key: event:/SFX_Piano_28
+    index: 61
+  - key: event:/SFX_Cymbal_footstep_1
+    index: 62
+  - key: event:/SFX_C ymbal_footstep_2
+    index: 63
+  - key: event:/SFX_Piano_38
+    index: 64
+  - key: event:/SFX_Piano_49
+    index: 65
+  - key: event:/SFX_Piano_3
+    index: 66
+  - key: event:/SFX_Piano_60
+    index: 67
+  - key: event:/SFX_Piano_1
+    index: 68
+  - key: event:/SFX_Bug_getting_hit_sound
+    index: 69
+  - key: event:/SFX_Piano_14
+    index: 70
+  - key: event:/SFX_Dying_falling
+    index: 71
+  - key: event:/SFX_Piano_17
+    index: 72
+  - key: event:/SFX_Piano_58
+    index: 73
+  - key: event:/SFX_Piano_61
+    index: 74
+  - key: event:/SFX_Drum_2_bounce
+    index: 75
+  - key: event:/SFX_Piano_51
+    index: 76
+  - key: event:/SFX_Bug_projectile_travel_sound
+    index: 77
+  - key: event:/SFX_Piano_25
+    index: 78
+  - key: event:/SFX_Piano_53
+    index: 79
+  - key: event:/SFX_Piano_42
+    index: 80
+  - key: event:/SFX_Piano_32
+    index: 81
+  - key: event:/SFX_Piano_15
+    index: 82
+  - key: event:/SFX_Default_jump_(landing)
+    index: 83
+  - key: event:/SFX_Piano_2
+    index: 84
+  - key: event:/SFX_Default_footstep
+    index: 85
+  - key: event:/SFX_Piano_47
+    index: 86
+  - key: event:/SFX_Piano_27
+    index: 87
+  - key: event:/SFX_Piano_36
+    index: 88
+  - key: event:/SFX_Dashing
+    index: 89
+  - key: event:/SFX_Piano_18
+    index: 90
+  - key: event:/SFX_Piano_59
+    index: 91
 --- !u!114 &23643840768827261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2167,6 +3667,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3204
+--- !u!114 &303097416068924282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtrack
+  Guid:
+    Data1: 1333663335
+    Data2: 1197453067
+    Data3: 447383942
+    Data4: 1615123937
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5701736040806570941}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 192000
 --- !u!114 &409026626097207463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2221,6 +3749,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3860
+--- !u!114 &468187506363885855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Cymbal_jump 2_(landing)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Cymbal_jump 2_(landing)
+  Guid:
+    Data1: -458384013
+    Data2: 1319328157
+    Data3: 935727277
+    Data4: -1046669799
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &554080877954550131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,6 +3803,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5573
+--- !u!114 &557884600226982800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_26
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_26
+  Guid:
+    Data1: -1590075338
+    Data2: 1196423734
+    Data3: 1313883832
+    Data4: -571762470
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &571628964896830471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,6 +3857,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3628
+--- !u!114 &638440880515738916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_13
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_13
+  Guid:
+    Data1: 531146091
+    Data2: 1323297338
+    Data3: -1642359656
+    Data4: -1290816422
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &656351535991972822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2410,6 +4019,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3175
+--- !u!114 &872245238503591427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_20
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_20
+  Guid:
+    Data1: -855438535
+    Data2: 1126040086
+    Data3: -1682042473
+    Data4: -1525423277
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &875931966257319475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2457,6 +4093,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2924768
   Exists: 1
+--- !u!114 &898521248391287519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Pickup
+  Guid:
+    Data1: -898897264
+    Data2: 1167857226
+    Data3: 1387408792
+    Data4: 1587987391
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 240
+--- !u!114 &909486942970169924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Drum_2_bounce
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Drum_2_bounce
+  Guid:
+    Data1: -2140518691
+    Data2: 1105636624
+    Data3: 481132948
+    Data4: 662679872
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 750
 --- !u!114 &933728570569763083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,6 +4201,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7257
+--- !u!114 &1019532279084277941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_22
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_22
+  Guid:
+    Data1: 1972422194
+    Data2: 1329182061
+    Data3: 525810843
+    Data4: 1735154081
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &1117114016502521710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_6
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_6
+  Guid:
+    Data1: 657700908
+    Data2: 1322196919
+    Data3: -748462949
+    Data4: -2064716618
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &1143352130489060350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_47
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_47
+  Guid:
+    Data1: 708934387
+    Data2: 1190585227
+    Data3: -1382178414
+    Data4: -23034894
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &1153125399426417720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2646,6 +4417,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2308
+--- !u!114 &1378858579177716888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum3
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum3
+  Guid:
+    Data1: 1920231475
+    Data2: 1328736832
+    Data3: -287781977
+    Data4: 1430579535
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1413179089779055464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2841,6 +4639,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4876
+--- !u!114 &1584560583894628410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_23
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_23
+  Guid:
+    Data1: -1603955330
+    Data2: 1256163662
+    Data3: 212579746
+    Data4: 1931254001
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &1660303962061988554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3084,6 +4909,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2961
+--- !u!114 &2291986074495345378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum4
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum4
+  Guid:
+    Data1: 282802490
+    Data2: 1328496663
+    Data3: -953664106
+    Data4: -1955121309
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2494085083694819843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3138,6 +4990,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3977
+--- !u!114 &2747727144243840891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Cymbal_footstep_1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Cymbal_footstep_1
+  Guid:
+    Data1: 416551846
+    Data2: 1312962453
+    Data3: 65986207
+    Data4: 714447344
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &2809208640417355467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3165,6 +5044,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2758
+--- !u!114 &2825772077693682782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_17
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_17
+  Guid:
+    Data1: 1562397139
+    Data2: 1110706526
+    Data3: -865952092
+    Data4: 625855008
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &2876959804925310258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_2
+  Guid:
+    Data1: -887369234
+    Data2: 1299768837
+    Data3: 497414045
+    Data4: 291294958
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 632
 --- !u!114 &2999495656421775087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,6 +5152,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32247
+--- !u!114 &3071283641749664163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_18
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_18
+  Guid:
+    Data1: -896202754
+    Data2: 1181650176
+    Data3: 402089916
+    Data4: -500065474
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &3200759186983199909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_33
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_33
+  Guid:
+    Data1: -562599805
+    Data2: 1289334624
+    Data3: 1190615459
+    Data4: -39442595
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &3201212006036576893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_9
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_9
+  Guid:
+    Data1: -1363365231
+    Data2: 1095183831
+    Data3: -219843414
+    Data4: 325014549
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &3241776050209413862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3273,6 +5287,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5225
+--- !u!114 &3411128568380869535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Dying
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Dying
+  Guid:
+    Data1: -1915984878
+    Data2: 1215247945
+    Data3: 1474268810
+    Data4: 1716901450
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1080
 --- !u!114 &3453041748748302238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3300,6 +5341,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3200
+--- !u!114 &3705896541374717582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_C ymbal_footstep_2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_C ymbal_footstep_2
+  Guid:
+    Data1: -556360534
+    Data2: 1195136674
+    Data3: 488233896
+    Data4: 618235298
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
+--- !u!114 &3731684622893145621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_45
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_45
+  Guid:
+    Data1: 1404653847
+    Data2: 1176848312
+    Data3: 33354679
+    Data4: 1865169453
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &3906597798761959739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,6 +5422,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2721
+--- !u!114 &4120754273000133155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_19
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_19
+  Guid:
+    Data1: 1756688937
+    Data2: 1272173915
+    Data3: 1647971982
+    Data4: -1178071628
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &4160404239917080855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3382,6 +5504,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 62952
+--- !u!114 &4405163601008064422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Default_footstep
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Default_footstep
+  Guid:
+    Data1: 638391024
+    Data2: 1287792373
+    Data3: -1064925013
+    Data4: 31152547
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
 --- !u!114 &4462166317377335022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3490,6 +5639,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6560
+--- !u!114 &4638083064980539962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_41
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_41
+  Guid:
+    Data1: -1580738035
+    Data2: 1187169425
+    Data3: -1937576307
+    Data4: -819618447
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &4774229847178642882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_55
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_55
+  Guid:
+    Data1: -70330086
+    Data2: 1236874598
+    Data3: -1550243685
+    Data4: 907184355
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &4806144545647292465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Snare_drum_bounce
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Snare_drum_bounce
+  Guid:
+    Data1: -363963563
+    Data2: 1200815014
+    Data3: 242912130
+    Data4: -890849635
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &4849775079691151149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3544,6 +5774,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3544
+--- !u!114 &4862221914672109522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_61
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_61
+  Guid:
+    Data1: 192611293
+    Data2: 1221591170
+    Data3: 975625863
+    Data4: 853307931
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &4867728746724507076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_4
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_4
+  Guid:
+    Data1: 1612966178
+    Data2: 1320042268
+    Data3: -185474400
+    Data4: 1385249350
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &4872586223849500777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_8
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_8
+  Guid:
+    Data1: -636473214
+    Data2: 1201353525
+    Data3: -1108995150
+    Data4: -2085485258
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &4906077406147971672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3564,6 +5875,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1038
   Exists: 1
+--- !u!114 &5236199179533010740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_3
+  Guid:
+    Data1: -805098826
+    Data2: 1205306833
+    Data3: -324805469
+    Data4: -1083626923
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &5376009854949536016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,6 +5956,66 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3175
+--- !u!114 &5632278560834590204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SketchPunk_Drum1
+  m_EditorClassIdentifier: 
+  Path: event:/SketchPunk_Drum1
+  Guid:
+    Data1: 1860043934
+    Data2: 1086882369
+    Data3: 599158694
+    Data4: 425819373
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5701736040806570941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Soundtrack/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 2368143284
+    data2: 3552094673
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Metronome
+  - Drum1
+  - Drum2
+  - Drum3
+  - Drum4
+  - Guitar1
+  - Guitar2
+  - Guitar3
+  - Guitar4
+  Exists: 1
 --- !u!114 &5706107606954419429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3808,6 +6206,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 340
+--- !u!114 &5837694833349682580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_14
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_14
+  Guid:
+    Data1: -1722876982
+    Data2: 1236210968
+    Data3: 1464694961
+    Data4: 1676030367
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
+--- !u!114 &5930848421855830212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_34
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_34
+  Guid:
+    Data1: 1094764033
+    Data2: 1154908862
+    Data3: 1385424804
+    Data4: 1926642291
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &5935044502300093078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3889,6 +6341,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3860
+--- !u!114 &6346941850385869099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Taking_damage
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Taking_damage
+  Guid:
+    Data1: 2029995870
+    Data2: 1193361737
+    Data3: -98220129
+    Data4: 1521237048
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 627
+--- !u!114 &6457037416847667549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_60
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_60
+  Guid:
+    Data1: -977413188
+    Data2: 1165741133
+    Data3: -1684030830
+    Data4: 805890249
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &6507812440173318962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,6 +6422,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11363
+--- !u!114 &6573189484695441328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Drum_2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Drum_2
+  Guid:
+    Data1: -773318330
+    Data2: 1143434145
+    Data3: -1856107098
+    Data4: 1319504267
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
 --- !u!114 &6604130126350246853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3970,6 +6503,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7937
+--- !u!114 &6795060122071721297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_43
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_43
+  Guid:
+    Data1: -1036879200
+    Data2: 1278433745
+    Data3: 1346975630
+    Data4: -2071935774
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &6813977423027310286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3997,6 +6557,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4762
+--- !u!114 &6858493943153275086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_24
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_24
+  Guid:
+    Data1: 1534983517
+    Data2: 1077786149
+    Data3: 1578848929
+    Data4: 157465430
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
 --- !u!114 &6881240402932322681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4132,6 +6719,107 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3204
+--- !u!114 &7232629492462677462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Bug_attacking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Bug_attacking
+  Guid:
+    Data1: 277804625
+    Data2: 1196625043
+    Data3: -2004377960
+    Data4: -1537463061
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &7345740566994465640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Bug_death_sound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Bug_death_sound
+  Guid:
+    Data1: -647006929
+    Data2: 1129800821
+    Data3: 1214561952
+    Data4: 2097940604
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &7386259029251416669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_39
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_39
+  Guid:
+    Data1: 1240440180
+    Data2: 1109365221
+    Data3: -1941372005
+    Data4: -1323897202
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &7497736502131266023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../SketchPunk/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639185034930445827
+  FileSizes:
+  - Name: Desktop
+    Value: 3463104
+  Exists: 1
 --- !u!114 &7633560079228265917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4159,6 +6847,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6618
+--- !u!114 &7881078547970336883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Bug_getting_hit_sound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Bug_getting_hit_sound
+  Guid:
+    Data1: 1554239425
+    Data2: 1296367161
+    Data3: -424417120
+    Data4: -86919192
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
 --- !u!114 &7949994355722470066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4346,6 +7061,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5704
+--- !u!114 &8462520731148113350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_16
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_16
+  Guid:
+    Data1: 2048778630
+    Data2: 1155482719
+    Data3: -880008055
+    Data4: -584206766
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &8576666116012059727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4454,3 +7196,77 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9281
+--- !u!114 &8978613781856787526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Dashing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Dashing
+  Guid:
+    Data1: 767802621
+    Data2: 1243529668
+    Data3: 145416323
+    Data4: -1113103319
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1080
+--- !u!114 &8983914608428051989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Piano_42
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Piano_42
+  Guid:
+    Data1: 1999508968
+    Data2: 1175447362
+    Data3: -247514726
+    Data4: -1993240967
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
+--- !u!114 &9098694175195665374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../SketchPunk/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639185034930523295
+  FileSizes:
+  - Name: Desktop
+    Value: 4268
+  Exists: 1
