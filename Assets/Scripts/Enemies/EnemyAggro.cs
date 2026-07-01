@@ -37,5 +37,6 @@ private void Update()
     patrolScript.enabled = !isAggro;
     chaseScript.enabled = isAggro;
     navMeshAgent.enabled = !isAggro;
+    
 }
 }
