@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAggro : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class EnemyAggro : MonoBehaviour
 
     private Enemy patrolScript;
     private EnemyAttack chaseScript;
+    private NavMeshAgent navMeshAgent;
     private Transform player;
 
     private void Start()
@@ -14,6 +16,7 @@ public class EnemyAggro : MonoBehaviour
 
         patrolScript = GetComponent<Enemy>();
         chaseScript = GetComponent<EnemyAttack>();
+        navMeshAgent=GetComponent<NavMeshAgent>();
 
         chaseScript.enabled = false;
     }
@@ -33,5 +36,6 @@ private void Update()
 
     patrolScript.enabled = !isAggro;
     chaseScript.enabled = isAggro;
+    navMeshAgent.enabled = !isAggro;
 }
 }
