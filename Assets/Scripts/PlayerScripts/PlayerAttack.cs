@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using FMODUnity;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Settings")]
@@ -9,49 +9,34 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float coneAngle = 60f;
     [SerializeField] private float attackDuration = 1f;
     [SerializeField] private LayerMask enemyLayer;
-
-    [Header("Attack Visual Prefab")]
-    [SerializeField] private GameObject attackVisualPrefab;
-    [SerializeField] private float visualForwardOffset = 1.5f;
-    [SerializeField] private float visualUpOffset = 0.5f;
-    [SerializeField] private string attacksoundpath;
+    [SerializeField] private EventReference attackEvent;
     [SerializeField] private Animator animator;
 
     private bool attacking;
+    private Animator animator2;
+    void Start()
+    {
+        animator2 = GetComponent<Animator>();
+    }
+
 
     public void Attacking()
     {
+        animator.SetTrigger("Attack");
         StartCoroutine(Attack());
+        animator2.SetTrigger("Attack");
     }
+
     private IEnumerator Attack()
     {
-        animator.SetTrigger("Attack");
-        FMODUnity.RuntimeManager.PlayOneShot(attacksoundpath);
+
+        FMODUnity.RuntimeManager.PlayOneShot(attackEvent);
         if (attacking)
             yield break;
 
         attacking = true;
 
         Vector3 attackDirection = transform.forward;
-
-        Vector3 visualPosition =
-            transform.position +
-            attackDirection.normalized * visualForwardOffset +
-            Vector3.up * visualUpOffset;
-
-        Quaternion visualRotation = Quaternion.LookRotation(attackDirection);
-
-        if (attackVisualPrefab != null)
-        {
-            GameObject spawnedVisual = Instantiate(
-                attackVisualPrefab,
-                visualPosition,
-                visualRotation
-            );
-
-            Destroy(spawnedVisual, attackDuration);
-        }
-
         DrawDebugCone(attackDirection);
 
         Collider[] hits = Physics.OverlapSphere(
@@ -80,6 +65,7 @@ public class PlayerAttack : MonoBehaviour
 
         attacking = false;
     }
+
     private void DrawDebugCone(Vector3 attackDirection)
     {
         Vector3 origin = transform.position;

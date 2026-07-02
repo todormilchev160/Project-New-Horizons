@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753538324185345734}
+  - component: {fileID: 1719720753054372069}
   m_Layer: 0
   m_Name: Keyboard Note
   m_TagString: Untagged
@@ -32,6 +33,20 @@ Transform:
   - {fileID: 8244190801923894805}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719720753054372069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570948512186050011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac72ba174dc4ce94aa41fb91bc68f6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 6642155673203814480}
+  rotationSpeed: 100
 --- !u!1 &6642155673203814480
 GameObject:
   m_ObjectHideFlags: 0

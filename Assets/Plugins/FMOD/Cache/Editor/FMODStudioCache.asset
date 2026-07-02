@@ -3448,13 +3448,14 @@ MonoBehaviour:
   - {fileID: 8978613781856787526}
   - {fileID: 3071283641749664163}
   - {fileID: -8395008054426909703}
+  - {fileID: 3017444154514415858}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7497736502131266023}
   StringsBanks:
   - {fileID: 9098694175195665374}
   cacheVersion: 131860
-  cacheTime: 639185034930523295
+  cacheTime: 639185809868857370
   SerializableEventsDict:
   - key: event:/SketchPunk_Drum3
     index: 0
@@ -3640,6 +3641,8 @@ MonoBehaviour:
     index: 90
   - key: event:/SFX_Piano_59
     index: 91
+  - key: event:/MainMenuMusic
+    index: 92
 --- !u!114 &23643840768827261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5125,6 +5128,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3744
+--- !u!114 &3017444154514415858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenuMusic
+  Guid:
+    Data1: 37151641
+    Data2: 1168089141
+    Data3: -1420868458
+    Data4: -701585143
+  Banks:
+  - {fileID: 7497736502131266023}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4727264915235797313}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 101647
 --- !u!114 &3033846300449140885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5666,6 +5697,43 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 528
+--- !u!114 &4727264915235797313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MainMenuMusic/Timing
+  m_EditorClassIdentifier: 
+  Name: Timing
+  StudioPath: 
+  Min: 0
+  Max: 12
+  Default: 0
+  ID:
+    data1: 2368143284
+    data2: 3552094673
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Metronome
+  - Drum1
+  - Drum2
+  - Drum3
+  - Drum4
+  - Guitar1
+  - Guitar2
+  - Guitar3
+  - Guitar4
+  - Synth1
+  - Synth2
+  - Synth3
+  - Synth4
+  Exists: 1
 --- !u!114 &4774229847178642882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5998,7 +6066,7 @@ MonoBehaviour:
   Name: Timing
   StudioPath: 
   Min: 0
-  Max: 8
+  Max: 12
   Default: 0
   ID:
     data1: 2368143284
@@ -6015,6 +6083,10 @@ MonoBehaviour:
   - Guitar2
   - Guitar3
   - Guitar4
+  - Synth1
+  - Synth2
+  - Synth3
+  - Synth4
   Exists: 1
 --- !u!114 &5706107606954419429
 MonoBehaviour:
@@ -6815,10 +6887,10 @@ MonoBehaviour:
   Path: ../SketchPunk/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639185034930445827
+  lastModified: 639185809868759412
   FileSizes:
   - Name: Desktop
-    Value: 3463104
+    Value: 4164896
   Exists: 1
 --- !u!114 &7633560079228265917
 MonoBehaviour:
@@ -7265,8 +7337,8 @@ MonoBehaviour:
   Path: ../SketchPunk/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639185034930523295
+  lastModified: 639185809868857370
   FileSizes:
   - Name: Desktop
-    Value: 4268
+    Value: 4412
   Exists: 1

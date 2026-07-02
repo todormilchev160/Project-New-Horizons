@@ -4,7 +4,6 @@ using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Animator animator;
     private PlayerAttack playerAttack;
     private Rigidbody rb;
 
@@ -28,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private EventReference FootstepEvent;
     [SerializeField] private float WalkStepRate = 0.5f;
     [SerializeField] private float DashStepRate = 0.32f;
+    [SerializeField] private Animator animator;
 
     private float footstepTimer = 0f;
 
@@ -48,11 +48,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         playerAttack = GetComponent<PlayerAttack>();
         rb = GetComponent<Rigidbody>();
 
         normalMoveSpeed = moveSpeed;
+
+        Vector3 offset = rb.position - circleCenter.position;
+        offset.y = 0f;
+        radius = offset.magnitude;
 
         RecalculateCirclePosition();
         RotateTowardCenter();
@@ -98,9 +101,9 @@ public class PlayerMovement : MonoBehaviour
         );
 
         HandleFootsteps();
-
         RecalculateCirclePosition();
         RotateTowardCenter();
+        LockToCircle();
     }
 
     private void HandleFootsteps()
@@ -196,6 +199,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Dash(float dashDirection)
     {
+        animator.SetTrigger("Dash");
         isDashing = true;
         lastDashTime = Time.time;
 
@@ -246,8 +250,20 @@ public class PlayerMovement : MonoBehaviour
         Vector3 offset = rb.position - circleCenter.position;
         offset.y = 0f;
 
-        radius = offset.magnitude;
         angle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
+    }
+
+    private void LockToCircle()
+    {
+        float radians = angle * Mathf.Deg2Rad;
+
+        Vector3 lockedPosition = circleCenter.position + new Vector3(
+            Mathf.Cos(radians) * radius,
+            rb.position.y - circleCenter.position.y,
+            Mathf.Sin(radians) * radius
+        );
+
+        rb.position = lockedPosition;
     }
 
     private void RotateTowardCenter()

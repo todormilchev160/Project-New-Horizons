@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DEMO 2/MainScene.unity
     guid: 506ceb16d343b804aaeca7dae25c6a37
+  - enabled: 1
+    path: Assets/Scenes/DEMO 2/Credits.unity
+    guid: 14950b3a17007cb41bba1459bfb99a17
+  - enabled: 1
+    path: Assets/Scenes/DEMO 2/Cinematic.unity
+    guid: e56ecf03c32366c499631cf407bc6768
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 32d7080e22f7fec4e876ecb3642c2e54, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: c6469e44ecb94df46b8bb27ad8b15157, type: 2}

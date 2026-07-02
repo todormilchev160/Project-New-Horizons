@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2601372581218556150}
   - component: {fileID: 465960162151830258}
   - component: {fileID: 8133992844476795312}
+  - component: {fileID: 3885332246769252119}
   m_Layer: 0
   m_Name: note3_sp
   m_TagString: Untagged
@@ -154,3 +155,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreAmount: 1
+--- !u!114 &3885332246769252119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370138616604852012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac72ba174dc4ce94aa41fb91bc68f6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 7370138616604852012}
+  rotationSpeed: 100
