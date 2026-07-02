@@ -19,8 +19,6 @@ void Start()
     currentTarget = patrolPointB;
     agent.SetDestination(currentTarget.position);
 }
-
-    // Update is called once per frame
     void Update()
     {
         Patrol();
@@ -36,7 +34,7 @@ void Start()
     {
         if (waiting)
             return;
-
+        agent.updateRotation=false;
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
             StartCoroutine(SwitchPoint());
